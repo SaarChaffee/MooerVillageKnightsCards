@@ -34,12 +34,13 @@ public class Golbal {//全局变量
             cardsList[i] = new Cards();
         }
     }
-    public static void CalCardsNum(){
-        int num=0;
-        for(int i=1;i<=60;i++){
-            if(Golbal.Cards_isHave[i]) num++;
+
+    public static void CalCardsNum() {
+        int num = 0;
+        for( int i = 1; i <= 60; i++ ){
+            if( Golbal.Cards_isHave[i] ) num++;
         }
-        Golbal.CardNum=num;
+        Golbal.CardNum = num;
     }
 
 }

@@ -60,143 +60,143 @@ public class Gacha_5 extends javax.swing.JFrame {
         BackGround = new javax.swing.JPanel();
         BackGroundLabel = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("五连抽");
+        setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
+        setTitle( "五连抽" );
 
-        Up.setOpaque(false);
-        Up.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        Up.setOpaque( false );
+        Up.setLayout( new org.netbeans.lib.awtextra.AbsoluteLayout() );
 
-        购买.setBackground(new java.awt.Color(153, 153, 255));
-        购买.setFont(new java.awt.Font("宋体", 1, 36)); // NOI18N
-        购买.setForeground(new java.awt.Color(255, 102, 153));
-        购买.setText("五连抽");
-        购买.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                购买ActionPerformed(evt);
+        购买.setBackground( new java.awt.Color( 153, 153, 255 ) );
+        购买.setFont( new java.awt.Font( "宋体", 1, 36 ) ); // NOI18N
+        购买.setForeground( new java.awt.Color( 255, 102, 153 ) );
+        购买.setText( "五连抽" );
+        购买.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                购买ActionPerformed( evt );
             }
-        });
-        Up.add(购买, new org.netbeans.lib.awtextra.AbsoluteConstraints(428, 556, 187, 76));
+        } );
+        Up.add( 购买, new org.netbeans.lib.awtextra.AbsoluteConstraints( 428, 556, 187, 76 ) );
 
-        返回.setBackground(new java.awt.Color(153, 153, 255));
-        返回.setFont(new java.awt.Font("宋体", 1, 36)); // NOI18N
-        返回.setForeground(new java.awt.Color(0, 51, 204));
-        返回.setText("返回");
-        返回.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                返回ActionPerformed(evt);
+        返回.setBackground( new java.awt.Color( 153, 153, 255 ) );
+        返回.setFont( new java.awt.Font( "宋体", 1, 36 ) ); // NOI18N
+        返回.setForeground( new java.awt.Color( 0, 51, 204 ) );
+        返回.setText( "返回" );
+        返回.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                返回ActionPerformed( evt );
             }
-        });
-        Up.add(返回, new org.netbeans.lib.awtextra.AbsoluteConstraints(642, 652, 187, 76));
+        } );
+        Up.add( 返回, new org.netbeans.lib.awtextra.AbsoluteConstraints( 642, 652, 187, 76 ) );
 
-        充值.setBackground(new java.awt.Color(0, 204, 204));
-        充值.setFont(new java.awt.Font("宋体", 1, 36)); // NOI18N
-        充值.setForeground(new java.awt.Color(204, 255, 204));
-        充值.setText("充值");
-        充值.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                充值ActionPerformed(evt);
+        充值.setBackground( new java.awt.Color( 0, 204, 204 ) );
+        充值.setFont( new java.awt.Font( "宋体", 1, 36 ) ); // NOI18N
+        充值.setForeground( new java.awt.Color( 204, 255, 204 ) );
+        充值.setText( "充值" );
+        充值.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                充值ActionPerformed( evt );
             }
-        });
-        Up.add(充值, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 650, 187, 76));
+        } );
+        Up.add( 充值, new org.netbeans.lib.awtextra.AbsoluteConstraints( 220, 650, 187, 76 ) );
 
-        点券400.setFont(new java.awt.Font("宋体", 1, 24)); // NOI18N
-        点券400.setForeground(new java.awt.Color(255, 102, 102));
-        点券400.setText("400点券");
-        Up.add(点券400, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 650, 105, 33));
+        点券400.setFont( new java.awt.Font( "宋体", 1, 24 ) ); // NOI18N
+        点券400.setForeground( new java.awt.Color( 255, 102, 102 ) );
+        点券400.setText( "400点券" );
+        Up.add( 点券400, new org.netbeans.lib.awtextra.AbsoluteConstraints( 472, 650, 105, 33 ) );
 
-        头像.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/i1.gif"))); // NOI18N
-        头像.setToolTipText("");
-        Up.add(头像, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 31, 100, 100));
+        头像.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
+        头像.setToolTipText( "" );
+        Up.add( 头像, new org.netbeans.lib.awtextra.AbsoluteConstraints( 37, 31, 100, 100 ) );
 
-        点券.setFont(new java.awt.Font("宋体", 1, 12)); // NOI18N
-        点券.setText("点券：114514");
-        Up.add(点券, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 116, 38));
+        点券.setFont( new java.awt.Font( "宋体", 1, 12 ) ); // NOI18N
+        点券.setText( "点券：114514" );
+        Up.add( 点券, new org.netbeans.lib.awtextra.AbsoluteConstraints( 170, 90, 116, 38 ) );
 
-        呢称.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        呢称.setText("呢称");
-        Up.add(呢称, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, -1, -1));
+        呢称.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        呢称.setText( "呢称" );
+        Up.add( 呢称, new org.netbeans.lib.awtextra.AbsoluteConstraints( 170, 40, -1, -1 ) );
 
-        Card1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/问号.png"))); // NOI18N
-        Up.add(Card1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 60, -1, -1));
+        Card1.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
+        Up.add( Card1, new org.netbeans.lib.awtextra.AbsoluteConstraints( 440, 60, -1, -1 ) );
 
-        Card2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/问号.png"))); // NOI18N
-        Up.add(Card2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, -1, -1));
+        Card2.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
+        Up.add( Card2, new org.netbeans.lib.awtextra.AbsoluteConstraints( 220, 130, -1, -1 ) );
 
-        Card3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/问号.png"))); // NOI18N
-        Up.add(Card3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, -1, -1));
+        Card3.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
+        Up.add( Card3, new org.netbeans.lib.awtextra.AbsoluteConstraints( 330, 350, -1, -1 ) );
 
-        Card4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/问号.png"))); // NOI18N
-        Up.add(Card4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, -1, -1));
+        Card4.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
+        Up.add( Card4, new org.netbeans.lib.awtextra.AbsoluteConstraints( 570, 350, -1, -1 ) );
 
-        Card5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/问号.png"))); // NOI18N
-        Up.add(Card5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 130, -1, -1));
+        Card5.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
+        Up.add( Card5, new org.netbeans.lib.awtextra.AbsoluteConstraints( 680, 130, -1, -1 ) );
 
-        卡牌属性1.setFont(new java.awt.Font("宋体", 1, 24)); // NOI18N
-        卡牌属性1.setForeground(new java.awt.Color(255, 255, 51));
-        Up.add(卡牌属性1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, 90, 40));
+        卡牌属性1.setFont( new java.awt.Font( "宋体", 1, 24 ) ); // NOI18N
+        卡牌属性1.setForeground( new java.awt.Color( 255, 255, 51 ) );
+        Up.add( 卡牌属性1, new org.netbeans.lib.awtextra.AbsoluteConstraints( 470, 20, 90, 40 ) );
 
-        卡牌属性2.setFont(new java.awt.Font("宋体", 1, 24)); // NOI18N
-        卡牌属性2.setForeground(new java.awt.Color(255, 255, 51));
-        Up.add(卡牌属性2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, 90, 40));
+        卡牌属性2.setFont( new java.awt.Font( "宋体", 1, 24 ) ); // NOI18N
+        卡牌属性2.setForeground( new java.awt.Color( 255, 255, 51 ) );
+        Up.add( 卡牌属性2, new org.netbeans.lib.awtextra.AbsoluteConstraints( 120, 220, 90, 40 ) );
 
-        卡牌属性3.setFont(new java.awt.Font("宋体", 1, 24)); // NOI18N
-        卡牌属性3.setForeground(new java.awt.Color(255, 255, 51));
-        Up.add(卡牌属性3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 90, 40));
+        卡牌属性3.setFont( new java.awt.Font( "宋体", 1, 24 ) ); // NOI18N
+        卡牌属性3.setForeground( new java.awt.Color( 255, 255, 51 ) );
+        Up.add( 卡牌属性3, new org.netbeans.lib.awtextra.AbsoluteConstraints( 220, 430, 90, 40 ) );
 
-        卡牌属性4.setFont(new java.awt.Font("宋体", 1, 24)); // NOI18N
-        卡牌属性4.setForeground(new java.awt.Color(255, 255, 51));
-        Up.add(卡牌属性4, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 430, 90, 40));
+        卡牌属性4.setFont( new java.awt.Font( "宋体", 1, 24 ) ); // NOI18N
+        卡牌属性4.setForeground( new java.awt.Color( 255, 255, 51 ) );
+        Up.add( 卡牌属性4, new org.netbeans.lib.awtextra.AbsoluteConstraints( 740, 430, 90, 40 ) );
 
-        卡牌属性5.setFont(new java.awt.Font("宋体", 1, 24)); // NOI18N
-        卡牌属性5.setForeground(new java.awt.Color(255, 255, 51));
-        Up.add(卡牌属性5, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 210, 90, 40));
+        卡牌属性5.setFont( new java.awt.Font( "宋体", 1, 24 ) ); // NOI18N
+        卡牌属性5.setForeground( new java.awt.Color( 255, 255, 51 ) );
+        Up.add( 卡牌属性5, new org.netbeans.lib.awtextra.AbsoluteConstraints( 840, 210, 90, 40 ) );
 
-        等级.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        等级.setText("呢称");
-        Up.add(等级, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
+        等级.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        等级.setText( "呢称" );
+        Up.add( 等级, new org.netbeans.lib.awtextra.AbsoluteConstraints( 170, 70, -1, -1 ) );
 
-        BackGroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backGround/b1.png"))); // NOI18N
-        BackGroundLabel.setOpaque(true);
+        BackGroundLabel.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b1.png" ) ) ); // NOI18N
+        BackGroundLabel.setOpaque( true );
 
-        javax.swing.GroupLayout BackGroundLayout = new javax.swing.GroupLayout(BackGround);
-        BackGround.setLayout(BackGroundLayout);
+        javax.swing.GroupLayout BackGroundLayout = new javax.swing.GroupLayout( BackGround );
+        BackGround.setLayout( BackGroundLayout );
         BackGroundLayout.setHorizontalGroup(
-            BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1022, Short.MAX_VALUE)
-            .addGroup(BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackGroundLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(BackGroundLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
+                BackGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 1022, Short.MAX_VALUE )
+                        .addGroup( BackGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addGroup( BackGroundLayout.createSequentialGroup()
+                                        .addContainerGap()
+                                        .addComponent( BackGroundLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                        .addContainerGap() ) )
+                                           );
         BackGroundLayout.setVerticalGroup(
-            BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 760, Short.MAX_VALUE)
-            .addGroup(BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackGroundLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(BackGroundLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
+                BackGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 760, Short.MAX_VALUE )
+                        .addGroup( BackGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addGroup( BackGroundLayout.createSequentialGroup()
+                                        .addContainerGap()
+                                        .addComponent( BackGroundLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                        .addContainerGap() ) )
+                                         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout( getContentPane() );
+        getContentPane().setLayout( layout );
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1022, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(Up, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(BackGround, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 1022, Short.MAX_VALUE )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( Up, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( BackGround, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                                 );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 760, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(Up, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(BackGround, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 760, Short.MAX_VALUE )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( Up, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( BackGround, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                               );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -242,7 +242,7 @@ public class Gacha_5 extends javax.swing.JFrame {
                 Golbal.UserBalance = util.getUserBalance( Golbal.UserUid );
                 Golbal.Cards_isHave = util.colles( Golbal.UserUid );
                 点券.setText( "点券：" + Golbal.UserBalance );
-                updateIcon() ;
+                updateIcon();
                 Golbal.CalCardsNum();
             }
             else{

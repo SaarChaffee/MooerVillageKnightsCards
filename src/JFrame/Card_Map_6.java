@@ -96,356 +96,356 @@ public class Card_Map_6 extends javax.swing.JFrame {
         Front = new javax.swing.JPanel();
         背景 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("商城");
+        setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
+        setTitle( "商城" );
 
-        backGround.setOpaque(false);
-        backGround.setPreferredSize(new java.awt.Dimension(1000, 700));
+        backGround.setOpaque( false );
+        backGround.setPreferredSize( new java.awt.Dimension( 1000, 700 ) );
 
-        头像.setFont(new java.awt.Font("宋体", 0, 18)); // NOI18N
-        头像.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/i1.gif"))); // NOI18N
+        头像.setFont( new java.awt.Font( "宋体", 0, 18 ) ); // NOI18N
+        头像.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel1.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水1);
-        水1.setText("火—11");
-        水1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水1ActionPerformed(evt);
+        购买选择.add( 水1 );
+        水1.setText( "火—11" );
+        水1.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水1ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel2.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水2);
-        水2.setText("火—12");
-        水2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水2ActionPerformed(evt);
+        购买选择.add( 水2 );
+        水2.setText( "火—12" );
+        水2.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水2ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel3.setFont(new java.awt.Font("宋体", 1, 12)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel3.setFont( new java.awt.Font( "宋体", 1, 12 ) ); // NOI18N
+        jLabel3.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水3);
-        水3.setText("火—13");
-        水3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水3ActionPerformed(evt);
+        购买选择.add( 水3 );
+        水3.setText( "火—13" );
+        水3.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水3ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel4.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水4);
-        水4.setText("火—14");
-        水4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水4ActionPerformed(evt);
+        购买选择.add( 水4 );
+        水4.setText( "火—14" );
+        水4.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水4ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel5.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水5);
-        水5.setText("火—15");
-        水5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水5ActionPerformed(evt);
+        购买选择.add( 水5 );
+        水5.setText( "火—15" );
+        水5.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水5ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel6.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水6);
-        水6.setText("火—16");
-        水6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水6ActionPerformed(evt);
+        购买选择.add( 水6 );
+        水6.setText( "火—16" );
+        水6.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水6ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel7.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水7);
-        水7.setText("火—17");
-        水7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水7ActionPerformed(evt);
+        购买选择.add( 水7 );
+        水7.setText( "火—17" );
+        水7.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水7ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel8.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水8);
-        水8.setText("火—18");
-        水8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水8ActionPerformed(evt);
+        购买选择.add( 水8 );
+        水8.setText( "火—18" );
+        水8.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水8ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel9.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水9);
-        水9.setText("火—19");
-        水9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水9ActionPerformed(evt);
+        购买选择.add( 水9 );
+        水9.setText( "火—19" );
+        水9.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水9ActionPerformed( evt );
             }
-        });
+        } );
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        jLabel10.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
 
-        购买选择.add(水10);
-        水10.setText("火—20");
-        水10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                水10ActionPerformed(evt);
+        购买选择.add( 水10 );
+        水10.setText( "火—20" );
+        水10.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                水10ActionPerformed( evt );
             }
-        });
+        } );
 
-        拥有卡牌.setFont(new java.awt.Font("宋体", 1, 18)); // NOI18N
-        拥有卡牌.setText("拥有卡牌数X/X");
+        拥有卡牌.setFont( new java.awt.Font( "宋体", 1, 18 ) ); // NOI18N
+        拥有卡牌.setText( "拥有卡牌数X/X" );
 
-        返回.setText("返回");
-        返回.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                返回ActionPerformed(evt);
+        返回.setText( "返回" );
+        返回.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                返回ActionPerformed( evt );
             }
-        });
+        } );
 
-        购买.setText("购买");
-        购买.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                购买ActionPerformed(evt);
+        购买.setText( "购买" );
+        购买.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                购买ActionPerformed( evt );
             }
-        });
+        } );
 
-        上一页.setText("上一页");
-        上一页.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                上一页ActionPerformed(evt);
+        上一页.setText( "上一页" );
+        上一页.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                上一页ActionPerformed( evt );
             }
-        });
+        } );
 
-        等级.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        等级.setText("等级");
+        等级.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        等级.setText( "等级" );
 
-        点券.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        点券.setText("点券");
+        点券.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        点券.setText( "点券" );
 
-        呢称.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        呢称.setText("呢称");
+        呢称.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        呢称.setText( "呢称" );
 
-        javax.swing.GroupLayout backGroundLayout = new javax.swing.GroupLayout(backGround);
-        backGround.setLayout(backGroundLayout);
+        javax.swing.GroupLayout backGroundLayout = new javax.swing.GroupLayout( backGround );
+        backGround.setLayout( backGroundLayout );
         backGroundLayout.setHorizontalGroup(
-            backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backGroundLayout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addComponent(水6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(backGroundLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(水7))
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(44, 44, 44)
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(backGroundLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(水8))
-                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(389, 389, 389)
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(backGroundLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(水9))
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(38, 38, 38)
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(backGroundLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(水10))
-                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(44, 44, 44))
-            .addGroup(backGroundLayout.createSequentialGroup()
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(头像, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(backGroundLayout.createSequentialGroup()
-                                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(等级, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(拥有卡牌, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(73, 73, 73)
-                                .addComponent(购买, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(62, 62, 62)
-                                .addComponent(返回, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(点券, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(191, 191, 191)
-                        .addComponent(上一页, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(backGroundLayout.createSequentialGroup()
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addComponent(水1))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(45, 45, 45))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backGroundLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(水2)
-                        .addGap(101, 101, 101)))
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(水3))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(水4))
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backGroundLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(水5)
-                        .addGap(103, 103, 103))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(44, Short.MAX_VALUE))))
-        );
+                backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, backGroundLayout.createSequentialGroup()
+                                .addGap( 81, 81, 81 )
+                                .addComponent( 水6 )
+                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addComponent( 水7 ) )
+                                                        .addComponent( jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE ) )
+                                                .addGap( 44, 44, 44 )
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addComponent( 水8 ) )
+                                                        .addComponent( jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 389, 389, 389 )
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addComponent( 水9 ) )
+                                                        .addComponent( jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE ) )
+                                                .addGap( 38, 38, 38 )
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addComponent( 水10 ) )
+                                                        .addComponent( jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE ) ) ) )
+                                .addGap( 44, 44, 44 ) )
+                        .addGroup( backGroundLayout.createSequentialGroup()
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 32, 32, 32 )
+                                                .addComponent( 头像, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 18, 18, 18 )
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                                        .addComponent( 等级, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                        .addComponent( 呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE ) )
+                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED )
+                                                                .addComponent( 拥有卡牌, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addGap( 73, 73, 73 )
+                                                                .addComponent( 购买, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addGap( 62, 62, 62 )
+                                                                .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE ) )
+                                                        .addComponent( 点券, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 191, 191, 191 )
+                                                .addComponent( 上一页, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
+                                .addContainerGap( javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                        .addGroup( backGroundLayout.createSequentialGroup()
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 68, 68, 68 )
+                                                .addComponent( 水1 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 34, 34, 34 )
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addComponent( jLabel6 )
+                                                        .addComponent( jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE ) ) ) )
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 44, 44, 44 )
+                                                .addComponent( jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 45, 45, 45 ) )
+                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, backGroundLayout.createSequentialGroup()
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED )
+                                                .addComponent( 水2 )
+                                                .addGap( 101, 101, 101 ) ) )
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 34, 34, 34 )
+                                                .addComponent( 水3 ) )
+                                        .addComponent( jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE ) )
+                                .addGap( 38, 38, 38 )
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 34, 34, 34 )
+                                                .addComponent( 水4 ) )
+                                        .addComponent( jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE ) )
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, backGroundLayout.createSequentialGroup()
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                                .addComponent( 水5 )
+                                                .addGap( 103, 103, 103 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 43, 43, 43 )
+                                                .addComponent( jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addContainerGap( 44, Short.MAX_VALUE ) ) ) )
+                                           );
         backGroundLayout.setVerticalGroup(
-            backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backGroundLayout.createSequentialGroup()
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(头像, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(拥有卡牌, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(购买, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(返回, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(呢称)
-                        .addGap(18, 18, 18)
-                        .addComponent(等级)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(点券)
-                        .addGap(27, 27, 27)))
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(水1))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(水2))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(水3))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(水4))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(水5)))
-                .addGap(28, 28, 28)
-                .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(水9))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(水10))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6))
-                        .addGap(6, 6, 6)
-                        .addGroup(backGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(水7)
-                            .addComponent(水6)))
-                    .addGroup(backGroundLayout.createSequentialGroup()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(水8)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addComponent(上一页, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+                backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGroup( backGroundLayout.createSequentialGroup()
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING, false )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addComponent( 头像, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                        .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.BASELINE )
+                                                                .addComponent( 拥有卡牌, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addComponent( 购买, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
+                                                .addGap( 18, 18, 18 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGap( 19, 19, 19 )
+                                                .addComponent( 呢称 )
+                                                .addGap( 18, 18, 18 )
+                                                .addComponent( 等级 )
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                                .addComponent( 点券 )
+                                                .addGap( 27, 27, 27 ) ) )
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addComponent( jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 6, 6, 6 )
+                                                .addComponent( 水1 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addComponent( jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 6, 6, 6 )
+                                                .addComponent( 水2 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addComponent( jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 6, 6, 6 )
+                                                .addComponent( 水3 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addComponent( jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 6, 6, 6 )
+                                                .addComponent( 水4 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addComponent( jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 6, 6, 6 )
+                                                .addComponent( 水5 ) ) )
+                                .addGap( 28, 28, 28 )
+                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addComponent( jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 6, 6, 6 )
+                                                .addComponent( 水9 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addComponent( jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 6, 6, 6 )
+                                                .addComponent( 水10 ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addComponent( jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                        .addComponent( jLabel6 ) )
+                                                .addGap( 6, 6, 6 )
+                                                .addGroup( backGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.BASELINE )
+                                                        .addComponent( 水7 )
+                                                        .addComponent( 水6 ) ) )
+                                        .addGroup( backGroundLayout.createSequentialGroup()
+                                                .addComponent( jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 6, 6, 6 )
+                                                .addComponent( 水8 ) ) )
+                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE )
+                                .addComponent( 上一页, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                .addContainerGap() )
+                                         );
 
-        Front.setOpaque(false);
+        Front.setOpaque( false );
 
-        背景.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backGround/b2.png"))); // NOI18N
+        背景.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b2.png" ) ) ); // NOI18N
 
-        javax.swing.GroupLayout FrontLayout = new javax.swing.GroupLayout(Front);
-        Front.setLayout(FrontLayout);
+        javax.swing.GroupLayout FrontLayout = new javax.swing.GroupLayout( Front );
+        Front.setLayout( FrontLayout );
         FrontLayout.setHorizontalGroup(
-            FrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
-            .addGroup(FrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(FrontLayout.createSequentialGroup()
-                    .addComponent(背景)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+                FrontLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 1000, Short.MAX_VALUE )
+                        .addGroup( FrontLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addGroup( FrontLayout.createSequentialGroup()
+                                        .addComponent( 背景 )
+                                        .addGap( 0, 0, Short.MAX_VALUE ) ) )
+                                      );
         FrontLayout.setVerticalGroup(
-            FrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
-            .addGroup(FrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(背景, javax.swing.GroupLayout.PREFERRED_SIZE, 687, Short.MAX_VALUE))
-        );
+                FrontLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 700, Short.MAX_VALUE )
+                        .addGroup( FrontLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( 背景, javax.swing.GroupLayout.PREFERRED_SIZE, 687, Short.MAX_VALUE ) )
+                                    );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout( getContentPane() );
+        getContentPane().setLayout( layout );
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(backGround, javax.swing.GroupLayout.PREFERRED_SIZE, 998, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 2, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addComponent(Front, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGroup( layout.createSequentialGroup()
+                                .addComponent( backGround, javax.swing.GroupLayout.PREFERRED_SIZE, 998, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                .addGap( 0, 2, Short.MAX_VALUE ) )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addGroup( layout.createSequentialGroup()
+                                        .addComponent( Front, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                        .addGap( 0, 0, Short.MAX_VALUE ) ) )
+                                 );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(backGround, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Front, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
+                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addComponent( backGround, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addGap( 0, 0, Short.MAX_VALUE )
+                                        .addComponent( Front, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
+                               );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

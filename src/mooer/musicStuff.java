@@ -12,34 +12,33 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
 /**
- *
  * @author Evistix
  */
 public class musicStuff {
-    void playMusic(String musicLocation){
-	try{
-            File musicPath = new File(musicLocation);
-            if(musicPath.exists()){
-                AudioInputStream audioInput = AudioSystem.getAudioInputStream(musicPath);
+    void playMusic( String musicLocation ) {
+        try{
+            File musicPath = new File( musicLocation );
+            if( musicPath.exists() ){
+                AudioInputStream audioInput = AudioSystem.getAudioInputStream( musicPath );
                 Clip clip = AudioSystem.getClip();
-                clip.open(audioInput);
+                clip.open( audioInput );
                 clip.start();
-                clip.loop(Clip.LOOP_CONTINUOUSLY);
+                clip.loop( Clip.LOOP_CONTINUOUSLY );
             }
             else{
-                }
-	}
-	catch(Exception ex){
-                   ex.printStackTrace();
-	}
+            }
+        }catch( Exception ex ){
+            ex.printStackTrace();
+        }
     }
 }
 
-class play{//播放音乐
-    play(){
+class play {//播放音乐
+
+    play() {
         String filepath = "music/m2.wav";
         musicStuff musicObject = new musicStuff();
-        musicObject.playMusic(filepath);
+        musicObject.playMusic( filepath );
     }
-     
+
 }
