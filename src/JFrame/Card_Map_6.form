@@ -117,9 +117,9 @@
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="等级" min="-2" pref="120" max="-2" attributes="0"/>
-                                      <Component id="呢称" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Component id="呢称" min="-2" pref="186" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="拥有卡牌" min="-2" pref="216" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                                   <Component id="购买" min="-2" pref="141" max="-2" attributes="0"/>

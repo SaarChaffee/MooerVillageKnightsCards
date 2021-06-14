@@ -98,226 +98,226 @@ public class Card_Map_3 extends javax.swing.JFrame {
         Front = new javax.swing.JPanel();
         背景 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
-        setTitle( "商城" );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("商城");
 
-        backGround.setOpaque( false );
-        backGround.setPreferredSize( new java.awt.Dimension( 1000, 700 ) );
-        backGround.setLayout( new org.netbeans.lib.awtextra.AbsoluteLayout() );
+        backGround.setOpaque(false);
+        backGround.setPreferredSize(new java.awt.Dimension(1000, 700));
+        backGround.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints( 34, 128, -1, -1 ) );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 128, -1, -1));
 
-        购买选择.add( 水1 );
-        水1.setText( "木—1" );
-        水1.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水1ActionPerformed( evt );
+        购买选择.add(水1);
+        水1.setText("木—1");
+        水1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水1ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水1, new org.netbeans.lib.awtextra.AbsoluteConstraints( 68, 334, -1, -1 ) );
+        });
+        backGround.add(水1, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 334, -1, -1));
 
-        jLabel2.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints( 230, 130, -1, -1 ) );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
 
-        购买选择.add( 水2 );
-        水2.setText( "木—2" );
-        水2.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水2ActionPerformed( evt );
+        购买选择.add(水2);
+        水2.setText("木—2");
+        水2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水2ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水2, new org.netbeans.lib.awtextra.AbsoluteConstraints( 280, 340, -1, -1 ) );
+        });
+        backGround.add(水2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, -1, -1));
 
-        jLabel3.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints( 430, 130, -1, -1 ) );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, -1, -1));
 
-        购买选择.add( 水3 );
-        水3.setText( "木—3" );
-        水3.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水3ActionPerformed( evt );
+        购买选择.add(水3);
+        水3.setText("木—3");
+        水3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水3ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水3, new org.netbeans.lib.awtextra.AbsoluteConstraints( 480, 340, -1, -1 ) );
+        });
+        backGround.add(水3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, -1, -1));
 
-        jLabel4.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints( 630, 130, -1, -1 ) );
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 130, -1, -1));
 
-        购买选择.add( 水4 );
-        水4.setText( "木—4" );
-        水4.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水4ActionPerformed( evt );
+        购买选择.add(水4);
+        水4.setText("木—4");
+        水4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水4ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水4, new org.netbeans.lib.awtextra.AbsoluteConstraints( 680, 340, -1, -1 ) );
+        });
+        backGround.add(水4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 340, -1, -1));
 
-        jLabel5.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints( 830, 130, -1, -1 ) );
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 130, -1, -1));
 
-        购买选择.add( 水5 );
-        水5.setText( "木—5" );
-        水5.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水5ActionPerformed( evt );
+        购买选择.add(水5);
+        水5.setText("木—5");
+        水5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水5ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水5, new org.netbeans.lib.awtextra.AbsoluteConstraints( 880, 340, -1, -1 ) );
+        });
+        backGround.add(水5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 340, -1, -1));
 
-        jLabel6.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints( 30, 390, -1, -1 ) );
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, -1, -1));
 
-        购买选择.add( 水6 );
-        水6.setText( "木—6" );
-        水6.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水6ActionPerformed( evt );
+        购买选择.add(水6);
+        水6.setText("木—6");
+        水6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水6ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水6, new org.netbeans.lib.awtextra.AbsoluteConstraints( 81, 591, -1, -1 ) );
+        });
+        backGround.add(水6, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 591, -1, -1));
 
-        jLabel7.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints( 230, 390, -1, -1 ) );
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 390, -1, -1));
 
-        购买选择.add( 水7 );
-        水7.setText( "木—7" );
-        水7.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水7ActionPerformed( evt );
+        购买选择.add(水7);
+        水7.setText("木—7");
+        水7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水7ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水7, new org.netbeans.lib.awtextra.AbsoluteConstraints( 280, 590, -1, -1 ) );
+        });
+        backGround.add(水7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, -1, -1));
 
-        jLabel8.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints( 430, 390, -1, -1 ) );
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 390, -1, -1));
 
-        购买选择.add( 水8 );
-        水8.setText( "木—8" );
-        水8.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水8ActionPerformed( evt );
+        购买选择.add(水8);
+        水8.setText("木—8");
+        水8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水8ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水8, new org.netbeans.lib.awtextra.AbsoluteConstraints( 480, 590, -1, -1 ) );
+        });
+        backGround.add(水8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 590, -1, -1));
 
-        jLabel9.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints( 640, 390, -1, -1 ) );
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, -1, -1));
 
-        购买选择.add( 水9 );
-        水9.setText( "木—9" );
-        水9.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水9ActionPerformed( evt );
+        购买选择.add(水9);
+        水9.setText("木—9");
+        水9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水9ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水9, new org.netbeans.lib.awtextra.AbsoluteConstraints( 690, 590, -1, -1 ) );
+        });
+        backGround.add(水9, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 590, -1, -1));
 
-        jLabel10.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
-        backGround.add( jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints( 830, 390, -1, -1 ) );
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img_small/1.jpg"))); // NOI18N
+        backGround.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 390, -1, -1));
 
-        购买选择.add( 水10 );
-        水10.setText( "木—10" );
-        水10.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                水10ActionPerformed( evt );
+        购买选择.add(水10);
+        水10.setText("木—10");
+        水10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                水10ActionPerformed(evt);
             }
-        } );
-        backGround.add( 水10, new org.netbeans.lib.awtextra.AbsoluteConstraints( 870, 590, -1, -1 ) );
+        });
+        backGround.add(水10, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 590, -1, -1));
 
-        拥有卡牌.setFont( new java.awt.Font( "宋体", 1, 18 ) ); // NOI18N
-        拥有卡牌.setText( "拥有卡牌数X/X" );
-        backGround.add( 拥有卡牌, new org.netbeans.lib.awtextra.AbsoluteConstraints( 301, 13, 210, 41 ) );
+        拥有卡牌.setFont(new java.awt.Font("宋体", 1, 18)); // NOI18N
+        拥有卡牌.setText("拥有卡牌数X/X");
+        backGround.add(拥有卡牌, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 13, 210, 41));
 
-        返回.setText( "返回" );
-        返回.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                返回ActionPerformed( evt );
+        返回.setText("返回");
+        返回.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                返回ActionPerformed(evt);
             }
-        } );
-        backGround.add( 返回, new org.netbeans.lib.awtextra.AbsoluteConstraints( 787, 10, 141, 51 ) );
+        });
+        backGround.add(返回, new org.netbeans.lib.awtextra.AbsoluteConstraints(787, 10, 141, 51));
 
-        购买.setText( "购买" );
-        购买.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                购买ActionPerformed( evt );
+        购买.setText("购买");
+        购买.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                购买ActionPerformed(evt);
             }
-        } );
-        backGround.add( 购买, new org.netbeans.lib.awtextra.AbsoluteConstraints( 584, 10, 141, 51 ) );
+        });
+        backGround.add(购买, new org.netbeans.lib.awtextra.AbsoluteConstraints(584, 10, 141, 51));
 
-        上一页.setText( "上一页" );
-        上一页.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                上一页ActionPerformed( evt );
+        上一页.setText("上一页");
+        上一页.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                上一页ActionPerformed(evt);
             }
-        } );
-        backGround.add( 上一页, new org.netbeans.lib.awtextra.AbsoluteConstraints( 191, 645, 171, 45 ) );
+        });
+        backGround.add(上一页, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 645, 171, 45));
 
-        下一页.setText( "下一页" );
-        下一页.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                下一页ActionPerformed( evt );
+        下一页.setText("下一页");
+        下一页.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                下一页ActionPerformed(evt);
             }
-        } );
-        backGround.add( 下一页, new org.netbeans.lib.awtextra.AbsoluteConstraints( 806, 642, 171, 45 ) );
+        });
+        backGround.add(下一页, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 640, 171, 45));
 
-        头像.setFont( new java.awt.Font( "宋体", 0, 18 ) ); // NOI18N
-        头像.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
-        backGround.add( 头像, new org.netbeans.lib.awtextra.AbsoluteConstraints( 34, 10, 100, 100 ) );
+        头像.setFont(new java.awt.Font("宋体", 0, 18)); // NOI18N
+        头像.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/i1.gif"))); // NOI18N
+        backGround.add(头像, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 10, 100, 100));
 
-        呢称.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        呢称.setText( "呢称" );
-        backGround.add( 呢称, new org.netbeans.lib.awtextra.AbsoluteConstraints( 150, 10, 190, -1 ) );
+        呢称.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        呢称.setText("呢称");
+        backGround.add(呢称, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 250, -1));
 
-        等级.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        等级.setText( "等级" );
-        backGround.add( 等级, new org.netbeans.lib.awtextra.AbsoluteConstraints( 150, 50, 70, -1 ) );
+        等级.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        等级.setText("等级");
+        backGround.add(等级, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 70, -1));
 
-        点券.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        点券.setText( "点券" );
-        backGround.add( 点券, new org.netbeans.lib.awtextra.AbsoluteConstraints( 150, 90, 270, -1 ) );
+        点券.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        点券.setText("点券");
+        backGround.add(点券, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 270, -1));
 
-        Front.setOpaque( false );
+        Front.setOpaque(false);
 
-        背景.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b2.png" ) ) ); // NOI18N
+        背景.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backGround/b2.png"))); // NOI18N
 
-        javax.swing.GroupLayout FrontLayout = new javax.swing.GroupLayout( Front );
-        Front.setLayout( FrontLayout );
+        javax.swing.GroupLayout FrontLayout = new javax.swing.GroupLayout(Front);
+        Front.setLayout(FrontLayout);
         FrontLayout.setHorizontalGroup(
-                FrontLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addGap( 0, 1000, Short.MAX_VALUE )
-                        .addGroup( FrontLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                .addGroup( FrontLayout.createSequentialGroup()
-                                        .addComponent( 背景 )
-                                        .addGap( 0, 0, Short.MAX_VALUE ) ) )
-                                      );
+            FrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGroup(FrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(FrontLayout.createSequentialGroup()
+                    .addComponent(背景)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
         FrontLayout.setVerticalGroup(
-                FrontLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addGap( 0, 700, Short.MAX_VALUE )
-                        .addGroup( FrontLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                .addComponent( 背景, javax.swing.GroupLayout.PREFERRED_SIZE, 687, Short.MAX_VALUE ) )
-                                    );
+            FrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 700, Short.MAX_VALUE)
+            .addGroup(FrontLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(背景, javax.swing.GroupLayout.PREFERRED_SIZE, 687, Short.MAX_VALUE))
+        );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout( getContentPane() );
-        getContentPane().setLayout( layout );
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addGroup( layout.createSequentialGroup()
-                                .addComponent( backGround, javax.swing.GroupLayout.PREFERRED_SIZE, 998, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                .addGap( 0, 2, Short.MAX_VALUE ) )
-                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                .addGroup( layout.createSequentialGroup()
-                                        .addComponent( Front, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                        .addGap( 0, 0, Short.MAX_VALUE ) ) )
-                                 );
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(backGround, javax.swing.GroupLayout.PREFERRED_SIZE, 998, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 2, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addComponent(Front, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
         layout.setVerticalGroup(
-                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( backGround, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGap( 0, 0, Short.MAX_VALUE )
-                                        .addComponent( Front, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
-                               );
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(backGround, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Front, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
