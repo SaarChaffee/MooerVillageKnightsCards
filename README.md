@@ -24,7 +24,7 @@
 - 1v1 Battle
 - <del>Friend</del>
 
-### Details please read documents[docs](docs/api.md)
+[comment]: <> (### Details please read documents[docs]&#40;docs/api.md&#41;)
 
 </h2>
 <img src ="resources/pic1.png">
