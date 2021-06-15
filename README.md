@@ -10,7 +10,7 @@
 </h1>
 <h2>
 
-## MEMBERS
+## Members
 
 - [SaarChaffee](https://github.com/saarchaffee)
 - [Evistix](https://gitee.com/Evistix)
@@ -29,9 +29,10 @@
 ## Submodules
 
 - [full version of Back-end](https://github.com/saarchaffee/JavaClosingHomework)
-  
+
   </h2>
 
+### Structure Tree View
 
   <img src ="resources/pic1.png">
 
