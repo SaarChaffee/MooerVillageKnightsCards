@@ -50,6 +50,7 @@ public class Store_Gacha extends javax.swing.JFrame {
         BackGroundLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
+        setTitle( "抽卡" );
 
         Up.setOpaque( false );
 

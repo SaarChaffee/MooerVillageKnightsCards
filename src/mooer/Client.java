@@ -16,8 +16,8 @@ public class Client {
             Golbal.ip = "localhost";
         }
         if( i == 2 ){
-            Golbal.端口 = 8888;
-            Golbal.ip = "192.168.137.1";
+            Golbal.端口 = 7777;
+            Golbal.ip = "192.168.1.140";
         }
     }
 

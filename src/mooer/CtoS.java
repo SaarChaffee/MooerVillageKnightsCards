@@ -9,16 +9,9 @@ package mooer;
 import JFrame.Fight;
 import JFrame.Fight_Standby;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.Socket;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * @author Evistix
@@ -61,11 +54,13 @@ public class CtoS {
                         if( read.equals( "win" ) ){
                             Fight.当前状态.setText( "获得胜利，点击返回退出" );
                             Fight.出牌.setVisible( false );
+                            Fight.摸牌.setVisible( false );
                             Fight.返回.setVisible( true );
                         }
                         if( read.equals( "lose" ) ){
                             Fight.当前状态.setText( "对战失败，点击返回退出" );
                             Fight.出牌.setVisible( false );
+                            Fight.摸牌.setVisible( false );
                             Fight.返回.setVisible( true );
                         }
 
@@ -85,16 +80,16 @@ public class CtoS {
                             if( read.substring( 0, 1 ).equals( "W" ) ){//胜利
                                 Fight.当前状态.setText( "胜利！" );
                                 Fight.rightHP -= 1;
-                                return;
+
                             }
                             else if( read.substring( 0, 1 ).equals( "L" ) ){//失败
                                 Fight.当前状态.setText( "失败" );
                                 Fight.liftHP -= 1;
-                                return;
+
                             }
                             else if( read.substring( 0, 1 ).equals( "P" ) ){//平局
                                 Fight.当前状态.setText( "平局" );
-                                return;
+
 
                             }
                             Fight.updateHP();//更新双方体力值
