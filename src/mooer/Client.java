@@ -12,7 +12,7 @@ package mooer;
 public class Client {
     public static void loadIP( int i ) {
         if( i == 1 ){
-            Golbal.端口 = 7777;
+            Golbal.端口 = 8888;
             Golbal.ip = "localhost";
         }
         if( i == 2 ){

@@ -59,141 +59,141 @@ public class DeleteFriend extends JFrame {
         等级 = new javax.swing.JLabel();
         点券 = new javax.swing.JLabel();
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText( "jLabel1" );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("充值");
+        setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
+        setTitle( "充值" );
 
-        背景.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backGround/b5.png"))); // NOI18N
+        背景.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b5.png" ) ) ); // NOI18N
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout( jPanel1 );
+        jPanel1.setLayout( jPanel1Layout );
         jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                jPanel1Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addComponent( 背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                        );
         jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                jPanel1Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addComponent( 背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                      );
 
-        jPanel2.setOpaque(false);
+        jPanel2.setOpaque( false );
 
-        头像1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/i1.gif"))); // NOI18N
-        头像1.setToolTipText("");
+        头像1.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
+        头像1.setToolTipText( "" );
 
-        好友码.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/好友码.png"))); // NOI18N
+        好友码.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/好友码.png" ) ) ); // NOI18N
 
-        购买信息.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        购买信息.setText("请用微信扫描二维码，添加作者购买");
+        购买信息.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        购买信息.setText( "请用微信扫描二维码，添加作者购买" );
 
-        CDK.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        CDK.setText("请输入兑换码（CDK）：");
+        CDK.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        CDK.setText( "请输入兑换码（CDK）：" );
 
-        确认兑换.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        确认兑换.setText("确认兑换");
-        确认兑换.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                确认兑换ActionPerformed(evt);
+        确认兑换.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        确认兑换.setText( "确认兑换" );
+        确认兑换.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                确认兑换ActionPerformed( evt );
             }
-        });
+        } );
 
-        返回.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        返回.setText("返回");
-        返回.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                返回ActionPerformed(evt);
+        返回.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        返回.setText( "返回" );
+        返回.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                返回ActionPerformed( evt );
             }
-        });
+        } );
 
-        呢称.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        呢称.setText("呢称");
+        呢称.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        呢称.setText( "呢称" );
 
-        等级.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        等级.setText("等级");
+        等级.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        等级.setText( "等级" );
 
-        点券.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        点券.setText("点券");
+        点券.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        点券.setText( "点券" );
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout( jPanel2 );
+        jPanel2.setLayout( jPanel2Layout );
         jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(头像1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(等级, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(点券, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(298, 298, 298)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(确认兑换, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(CDK输入区)
-                                    .addComponent(返回, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(购买信息, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                        .addComponent(好友码)
-                                        .addGap(29, 29, 29)))))))
-                .addContainerGap())
-        );
+                jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGroup( jPanel2Layout.createSequentialGroup()
+                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( jPanel2Layout.createSequentialGroup()
+                                                .addGap( 29, 29, 29 )
+                                                .addComponent( 头像1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 18, 18, 18 )
+                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addComponent( 呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                        .addComponent( 等级, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                        .addComponent( 点券, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE ) )
+                                                .addGap( 0, 0, Short.MAX_VALUE ) )
+                                        .addGroup( jPanel2Layout.createSequentialGroup()
+                                                .addGap( 298, 298, 298 )
+                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addGroup( jPanel2Layout.createSequentialGroup()
+                                                                .addComponent( CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addGap( 0, 0, Short.MAX_VALUE ) )
+                                                        .addGroup( jPanel2Layout.createSequentialGroup()
+                                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.TRAILING, false )
+                                                                        .addComponent( 确认兑换, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                                                        .addComponent( CDK输入区 )
+                                                                        .addComponent( 返回, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE ) )
+                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE )
+                                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                                        .addComponent( 购买信息, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                                                                .addComponent( 好友码 )
+                                                                                .addGap( 29, 29, 29 ) ) ) ) ) ) )
+                                .addContainerGap() )
+                                        );
         jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(头像1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(等级)
-                        .addGap(24, 24, 24)
-                        .addComponent(点券)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                .addComponent(CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(购买信息, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(CDK输入区, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36)))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(好友码)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(确认兑换, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(45, 45, 45)
-                        .addComponent(返回, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(23, 23, 23))
-        );
+                jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGroup( jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.TRAILING )
+                                        .addComponent( 头像1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                        .addGroup( jPanel2Layout.createSequentialGroup()
+                                                .addComponent( 呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 20, 20, 20 )
+                                                .addComponent( 等级 )
+                                                .addGap( 24, 24, 24 )
+                                                .addComponent( 点券 ) ) )
+                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE )
+                                .addComponent( CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                .addGap( 18, 18, 18 )
+                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                                .addComponent( 购买信息, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.UNRELATED ) )
+                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                                .addComponent( CDK输入区, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 36, 36, 36 ) ) )
+                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                        .addComponent( 好友码 )
+                                        .addGroup( jPanel2Layout.createSequentialGroup()
+                                                .addComponent( 确认兑换, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 45, 45, 45 )
+                                                .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
+                                .addGap( 23, 23, 23 ) )
+                                      );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout( getContentPane() );
+        getContentPane().setLayout( layout );
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addComponent( jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                                 );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addComponent( jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                               );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
