@@ -8,6 +8,7 @@ package mooer;
 
 
 import JFrame.SignIn;
+import Server.Server;
 
 /**
  * @author Evistix
@@ -20,7 +21,7 @@ public class Mooer {
      */
     public static void main( String[] args ) {
 //        new User_Msg_Load();
-        Client.loadIP( 2 );
+//        Client.loadIP( 2 );
         // new ImgTest().setVisible(true);
         //new Card_Map_6().setVisible(true);
         //new Store().setVisible(true);
@@ -31,7 +32,7 @@ public class Mooer {
 
         //     new Main_UI().setVisible(true);
 
-//        new Server().setVisible( true );
+        new Server().setVisible( true );
         //  new CtoS("127.0.0.1").send("nmsl");
 
 // new Register().setVisible(true);
