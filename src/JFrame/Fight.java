@@ -120,7 +120,7 @@ public class Fight extends javax.swing.JFrame {
         背景 = new javax.swing.JLabel();
 
         setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
-        setTitle( "商城" );
+        setTitle( "对战" );
 
         backGround.setForeground( new java.awt.Color( 255, 102, 102 ) );
         backGround.setOpaque( false );

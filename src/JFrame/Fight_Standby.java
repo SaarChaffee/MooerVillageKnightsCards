@@ -47,7 +47,7 @@ public class Fight_Standby extends javax.swing.JFrame {
         背景 = new javax.swing.JLabel();
 
         setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
-        setTitle( "商城" );
+        setTitle( "对战" );
 
         backGround.setOpaque( false );
         backGround.setPreferredSize( new java.awt.Dimension( 1000, 700 ) );

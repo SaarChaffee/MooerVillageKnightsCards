@@ -13,7 +13,7 @@ public class Client {
     public static void loadIP( int i ) {
         if( i == 1 ){
             Golbal.端口 = 8888;
-            Golbal.ip = "127.0.0.1";
+            Golbal.ip = "localhost";
         }
         if( i == 2 ){
             Golbal.端口 = 8888;

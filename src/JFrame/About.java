@@ -37,6 +37,7 @@ public class About extends javax.swing.JFrame {
         BackGroundLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
+        setTitle( "关于" );
 
         Up.setOpaque( false );
 
