@@ -24,7 +24,7 @@ public class Mooer {
      */
     public static void main( String[] args ) {
 //        new User_Msg_Load();
-//        Client.loadIP( 2 );
+        Client.loadIP( 1 );
         // new ImgTest().setVisible(true);
         //new Card_Map_6().setVisible(true);
         //new Store().setVisible(true);

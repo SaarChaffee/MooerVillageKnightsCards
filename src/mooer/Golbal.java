@@ -18,7 +18,7 @@ public class Golbal {//全局变量
     public static int standby = 0;//用于等待对手准备卡线程
     public static int waitCard = 0;//等对面出牌
     public static int 端口 = 8888;
-    public static String ip = "127.0.0.1";
+    public static String ip = "localhost";
     public static int UserUid;//Uid
     public static String Account;//昵称
     public static int UserBalance;//点券余额
