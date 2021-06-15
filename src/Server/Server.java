@@ -6,21 +6,15 @@
 
 package Server;
 
-import JFrame.Fight;
+import mooer.Golbal;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.*;
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import mooer.ChangeImg;
-import mooer.Golbal;
 
 /**
  * @author Evistix
@@ -235,13 +229,13 @@ public class Server extends javax.swing.JFrame {
                                     text_l.setText( "" );
                                     text_r.setCaretPosition( text_r.getText().length() );
                                     if( rec2.equals( "standby" ) ){
-                                        Server.this.standby1 = 1;
+                                        Server.this.standby2 = 1;
                                     }
                                     if( standby1 == 1 && standby2 == 1 ){//双方都准备好
                                         standby();
                                     }
                                     if( rec2.substring( 0, 1 ).equals( "C" ) ){ //接收到卡牌信息
-                                        card1 = Integer.parseInt( rec2.substring( 1, rec2.length() ) );//取出卡牌序号长度
+                                        card2 = Integer.parseInt( rec2.substring( 1, rec2.length() ) );//取出卡牌序号长度
                                     }
                                     if( card1 != 0 && card2 != 0 ){//双方都接收到卡牌信息
                                         vs();
@@ -382,8 +376,8 @@ public class Server extends javax.swing.JFrame {
     private void linkActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_linkActionPerformed
         System.out.println( card1 );
         System.out.println( card2 );
-        System.out.println( standby1 );
-        System.out.println( standby2 );
+        System.out.println( "standby1" + standby1 );
+        System.out.println( "standby2" + standby2 );
         System.out.println( VS_result );
 // TODO add your handling code here:
 //       try {
@@ -433,13 +427,13 @@ public class Server extends javax.swing.JFrame {
                 }
             }
         }catch( ClassNotFoundException ex ){
-            Logger.getLogger( Server.class.getName() ).log( Level.SEVERE, null, ex );
+            java.util.logging.Logger.getLogger( Server.class.getName() ).log( java.util.logging.Level.SEVERE, null, ex );
         }catch( InstantiationException ex ){
-            Logger.getLogger( Server.class.getName() ).log( Level.SEVERE, null, ex );
+            java.util.logging.Logger.getLogger( Server.class.getName() ).log( java.util.logging.Level.SEVERE, null, ex );
         }catch( IllegalAccessException ex ){
-            Logger.getLogger( Server.class.getName() ).log( Level.SEVERE, null, ex );
+            java.util.logging.Logger.getLogger( Server.class.getName() ).log( java.util.logging.Level.SEVERE, null, ex );
         }catch( javax.swing.UnsupportedLookAndFeelException ex ){
-            Logger.getLogger( Server.class.getName() ).log( Level.SEVERE, null, ex );
+            java.util.logging.Logger.getLogger( Server.class.getName() ).log( java.util.logging.Level.SEVERE, null, ex );
         }
         //</editor-fold>
 

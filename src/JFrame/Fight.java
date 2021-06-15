@@ -127,16 +127,16 @@ public class Fight extends javax.swing.JFrame {
         backGround.setPreferredSize( new java.awt.Dimension( 1000, 700 ) );
         backGround.setLayout( new org.netbeans.lib.awtextra.AbsoluteLayout() );
 
-        我方展示卡.setIcon( new ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
+        我方展示卡.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
         backGround.add( 我方展示卡, new org.netbeans.lib.awtextra.AbsoluteConstraints( 250, 150, -1, -1 ) );
 
-        敌方展示卡.setIcon( new ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
+        敌方展示卡.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
         backGround.add( 敌方展示卡, new org.netbeans.lib.awtextra.AbsoluteConstraints( 550, 150, -1, -1 ) );
 
-        jLabel3.setIcon( new ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
+        jLabel3.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
         backGround.add( jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints( 880, 0, 100, 100 ) );
 
-        己方卡1.setIcon( new ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
+        己方卡1.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
         己方卡1.addMouseListener( new java.awt.event.MouseAdapter() {
             public void mouseClicked( java.awt.event.MouseEvent evt ) {
                 己方卡1MouseClicked( evt );
@@ -144,7 +144,7 @@ public class Fight extends javax.swing.JFrame {
         } );
         backGround.add( 己方卡1, new org.netbeans.lib.awtextra.AbsoluteConstraints( 40, 440, -1, -1 ) );
 
-        己方卡2.setIcon( new ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
+        己方卡2.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
         己方卡2.addMouseListener( new java.awt.event.MouseAdapter() {
             public void mouseClicked( java.awt.event.MouseEvent evt ) {
                 己方卡2MouseClicked( evt );
@@ -152,7 +152,7 @@ public class Fight extends javax.swing.JFrame {
         } );
         backGround.add( 己方卡2, new org.netbeans.lib.awtextra.AbsoluteConstraints( 210, 440, -1, -1 ) );
 
-        己方卡3.setIcon( new ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
+        己方卡3.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
         己方卡3.addMouseListener( new java.awt.event.MouseAdapter() {
             public void mouseClicked( java.awt.event.MouseEvent evt ) {
                 己方卡3MouseClicked( evt );
@@ -160,7 +160,7 @@ public class Fight extends javax.swing.JFrame {
         } );
         backGround.add( 己方卡3, new org.netbeans.lib.awtextra.AbsoluteConstraints( 380, 440, -1, -1 ) );
 
-        己方卡4.setIcon( new ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
+        己方卡4.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/Img_small/1.jpg" ) ) ); // NOI18N
         己方卡4.addMouseListener( new java.awt.event.MouseAdapter() {
             public void mouseClicked( java.awt.event.MouseEvent evt ) {
                 己方卡4MouseClicked( evt );
@@ -177,7 +177,7 @@ public class Fight extends javax.swing.JFrame {
         backGround.add( 返回, new org.netbeans.lib.awtextra.AbsoluteConstraints( 780, 580, 141, 51 ) );
 
         头像.setFont( new java.awt.Font( "宋体", 0, 18 ) ); // NOI18N
-        头像.setIcon( new ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
+        头像.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
         backGround.add( 头像, new org.netbeans.lib.awtextra.AbsoluteConstraints( 20, 0, 100, 100 ) );
 
         出牌.setText( "出牌" );
@@ -241,7 +241,7 @@ public class Fight extends javax.swing.JFrame {
 
         Front.setOpaque( false );
 
-        背景.setIcon( new ImageIcon( getClass().getResource( "/backGround/b2.png" ) ) ); // NOI18N
+        背景.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b2.png" ) ) ); // NOI18N
 
         javax.swing.GroupLayout FrontLayout = new javax.swing.GroupLayout( Front );
         Front.setLayout( FrontLayout );
@@ -369,13 +369,13 @@ public class Fight extends javax.swing.JFrame {
                 }
             }
         }catch( ClassNotFoundException ex ){
-            Logger.getLogger( Fight.class.getName() ).log( Level.SEVERE, null, ex );
+            java.util.logging.Logger.getLogger( Fight.class.getName() ).log( java.util.logging.Level.SEVERE, null, ex );
         }catch( InstantiationException ex ){
-            Logger.getLogger( Fight.class.getName() ).log( Level.SEVERE, null, ex );
+            java.util.logging.Logger.getLogger( Fight.class.getName() ).log( java.util.logging.Level.SEVERE, null, ex );
         }catch( IllegalAccessException ex ){
-            Logger.getLogger( Fight.class.getName() ).log( Level.SEVERE, null, ex );
+            java.util.logging.Logger.getLogger( Fight.class.getName() ).log( java.util.logging.Level.SEVERE, null, ex );
         }catch( javax.swing.UnsupportedLookAndFeelException ex ){
-            Logger.getLogger( Fight.class.getName() ).log( Level.SEVERE, null, ex );
+            java.util.logging.Logger.getLogger( Fight.class.getName() ).log( java.util.logging.Level.SEVERE, null, ex );
         }
         //</editor-fold>
 

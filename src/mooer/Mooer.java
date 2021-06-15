@@ -7,11 +7,7 @@
 package mooer;
 
 
-import JFrame.*;
-import Server.Server;
-
-import java.awt.Image;
-import javax.swing.ImageIcon;
+import JFrame.SignIn;
 
 /**
  * @author Evistix
@@ -24,7 +20,7 @@ public class Mooer {
      */
     public static void main( String[] args ) {
 //        new User_Msg_Load();
-        Client.loadIP( 1 );
+        Client.loadIP( 2 );
         // new ImgTest().setVisible(true);
         //new Card_Map_6().setVisible(true);
         //new Store().setVisible(true);
@@ -33,9 +29,9 @@ public class Mooer {
 //        new play();//播放音乐
 //            new Music();
 
-//       new Main_UI().setVisible(true);
+        //     new Main_UI().setVisible(true);
 
-        new Server().setVisible( true );
+//        new Server().setVisible( true );
         //  new CtoS("127.0.0.1").send("nmsl");
 
 // new Register().setVisible(true);
