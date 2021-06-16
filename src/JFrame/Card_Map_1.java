@@ -396,8 +396,8 @@ public class Card_Map_1 extends javax.swing.JFrame {
                 updateIcon();
                 util.Gacha( Golbal.UserUid, 2000 );
                 util.getCard( Golbal.UserUid, Golbal.cardsList[num].type + Golbal.cardsList[num].var );
-//                util.setCardQuantity( Golbal.UserUid );
-//                Golbal.CardNum = util.getCardQuantity( Golbal.UserUid );
+                util.setCardQuantity( Golbal.UserUid );
+                Golbal.CardNum = util.getCardQuantity( Golbal.UserUid );
             }
             else{
                 JOptionPane.showMessageDialog( null, "余额不足", "提示信息", JOptionPane.INFORMATION_MESSAGE );
