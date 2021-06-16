@@ -8,9 +8,11 @@ package JFrame;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
 import lite.*;
 import mooer.*;
@@ -33,6 +35,7 @@ public class Friend extends JFrame {
     public Friend() {
         initComponents();
         updateMsg();
+        updateFriendList();
     }
 
     /**
@@ -49,20 +52,20 @@ public class Friend extends JFrame {
         背景 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         头像1 = new javax.swing.JLabel();
-        好友码 = new javax.swing.JLabel();
-        购买信息 = new javax.swing.JLabel();
-        CDK输入区 = new javax.swing.JTextField();
         CDK = new javax.swing.JLabel();
-        确认兑换 = new javax.swing.JButton();
+        删除好友 = new javax.swing.JButton();
         返回 = new javax.swing.JButton();
         呢称 = new javax.swing.JLabel();
         等级 = new javax.swing.JLabel();
         点券 = new javax.swing.JLabel();
+        添加好友 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        好友表 = new javax.swing.JTable();
 
         jLabel1.setText( "jLabel1" );
 
         setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
-        setTitle( "充值" );
+        setTitle( "我的好友" );
 
         背景.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b5.png" ) ) ); // NOI18N
 
@@ -82,19 +85,14 @@ public class Friend extends JFrame {
         头像1.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
         头像1.setToolTipText( "" );
 
-        好友码.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/好友码.png" ) ) ); // NOI18N
-
-        购买信息.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        购买信息.setText( "请用微信扫描二维码，添加作者购买" );
-
         CDK.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        CDK.setText( "请输入兑换码（CDK）：" );
+        CDK.setText( "好友列表" );
 
-        确认兑换.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        确认兑换.setText( "确认兑换" );
-        确认兑换.addActionListener( new java.awt.event.ActionListener() {
+        删除好友.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        删除好友.setText( "删除好友" );
+        删除好友.addActionListener( new java.awt.event.ActionListener() {
             public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                确认兑换ActionPerformed( evt );
+                删除好友ActionPerformed( evt );
             }
         } );
 
@@ -115,6 +113,56 @@ public class Friend extends JFrame {
         点券.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
         点券.setText( "点券" );
 
+        添加好友.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        添加好友.setText( "添加好友" );
+        添加好友.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                添加好友ActionPerformed( evt );
+            }
+        } );
+
+        好友表.setModel( new javax.swing.table.DefaultTableModel(
+                new Object[][]{
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null },
+                        { null, null }
+                },
+                new String[]{
+                        "好友uid", "好友昵称"
+                }
+        ) {
+            Class[] types = new Class[]{
+                    java.lang.Long.class, java.lang.String.class
+            };
+
+            public Class getColumnClass( int columnIndex ) {
+                return types[columnIndex];
+            }
+        } );
+        jScrollPane1.setViewportView( 好友表 );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout( jPanel2 );
         jPanel2.setLayout( jPanel2Layout );
         jPanel2Layout.setHorizontalGroup(
@@ -128,26 +176,22 @@ public class Friend extends JFrame {
                                                 .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
                                                         .addComponent( 呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE )
                                                         .addComponent( 等级, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                        .addComponent( 点券, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE ) )
-                                                .addGap( 0, 0, Short.MAX_VALUE ) )
+                                                        .addComponent( 点券, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
                                         .addGroup( jPanel2Layout.createSequentialGroup()
-                                                .addGap( 298, 298, 298 )
                                                 .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
                                                         .addGroup( jPanel2Layout.createSequentialGroup()
+                                                                .addGap( 245, 245, 245 )
+                                                                .addComponent( jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED ) )
+                                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                                                .addContainerGap()
                                                                 .addComponent( CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                                .addGap( 0, 0, Short.MAX_VALUE ) )
-                                                        .addGroup( jPanel2Layout.createSequentialGroup()
-                                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.TRAILING, false )
-                                                                        .addComponent( 确认兑换, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                                                                        .addComponent( CDK输入区 )
-                                                                        .addComponent( 返回, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE ) )
-                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE )
-                                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                                                        .addComponent( 购买信息, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                                                                .addComponent( 好友码 )
-                                                                                .addGap( 29, 29, 29 ) ) ) ) ) ) )
-                                .addContainerGap() )
+                                                                .addGap( 41, 41, 41 ) ) )
+                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                                        .addComponent( 删除好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                        .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                        .addComponent( 添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE ) ) ) )
+                                .addContainerGap( 45, Short.MAX_VALUE ) )
                                         );
         jPanel2Layout.setVerticalGroup(
                 jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
@@ -161,23 +205,20 @@ public class Friend extends JFrame {
                                                 .addComponent( 等级 )
                                                 .addGap( 24, 24, 24 )
                                                 .addComponent( 点券 ) ) )
-                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE )
-                                .addComponent( CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                .addGap( 18, 18, 18 )
                                 .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                                .addComponent( 购买信息, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.UNRELATED ) )
-                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                                .addComponent( CDK输入区, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addGap( 36, 36, 36 ) ) )
-                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                        .addComponent( 好友码 )
                                         .addGroup( jPanel2Layout.createSequentialGroup()
-                                                .addComponent( 确认兑换, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addGap( 45, 45, 45 )
-                                                .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
-                                .addGap( 23, 23, 23 ) )
+                                                .addGap( 227, 227, 227 )
+                                                .addComponent( 添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.UNRELATED )
+                                                .addComponent( 删除好友, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED )
+                                                .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addGap( 0, 85, Short.MAX_VALUE ) )
+                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                                .addComponent( CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED )
+                                                .addComponent( jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE ) ) ) )
                                       );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout( getContentPane() );
@@ -204,32 +245,26 @@ public class Friend extends JFrame {
         new Main_UI().setVisible( true );
     }//GEN-LAST:event_返回ActionPerformed
 
-    private void 确认兑换ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_确认兑换ActionPerformed
+    private void 删除好友ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_删除好友ActionPerformed
         // TODO add your handling code here:
-        String cdk = CDK输入区.getText();
-        int uid = Golbal.UserUid;
-        if( util.isRedemptionExist( cdk ) && util.isRedemptionUsed( cdk ) ){
-//            util.recharge( uid, cdk );
-            ResultSet re = util.getRedemptionInfo( cdk );
-            int value = 0;
-            try{
-                re.next();
-                value = re.getInt( "RedemptionCodeValue" );
-                Golbal.UserBalance += value;
-                updateMsg();
-                String str1 = "update mooer.dbo.UserData set UserBalance = " + Golbal.UserBalance + " where UserUid = " + Golbal.UserUid;
-                dao.Update( str1 );
-                String str2 = "update mooer.dbo.Redemption set RedemptionUsed = " + Golbal.UserUid + " where RedemptionCode = '" + cdk + "'";
-                dao.Update( str2 );
-            }catch( SQLException ex ){
-                Logger.getLogger( Friend.class.getName() ).log( Level.SEVERE, null, ex );
-            }
-            JOptionPane.showMessageDialog( null, "充值成功！按确定返回商店界面", "充值成功！", JOptionPane.INFORMATION_MESSAGE );
+        this.setVisible( false );
+        new DeleteFriend().setVisible( true );
+    }//GEN-LAST:event_删除好友ActionPerformed
+
+    private void 添加好友ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_添加好友ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible( false );
+        new AddFriend().setVisible( true );
+    }//GEN-LAST:event_添加好友ActionPerformed
+
+    private void updateFriendList() {
+        ArrayList list = util.getFriendList( Golbal.UserUid );
+        for( Object i : list ){
+            好友表.setValueAt( ( Integer ) i, list.indexOf( i ), 0 );
+            好友表.setValueAt( util.getUserAccountByUid( ( Integer ) i ), list.indexOf( i ), 1 );
         }
-        else{
-            JOptionPane.showMessageDialog( null, "充值失败！激活码无效或已被使用", "充值失败！", JOptionPane.INFORMATION_MESSAGE );
-        }
-    }//GEN-LAST:event_确认兑换ActionPerformed
+
+    }
 
     /**
      * @param args the command line arguments
@@ -268,18 +303,18 @@ public class Friend extends JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CDK;
-    private javax.swing.JTextField CDK输入区;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton 删除好友;
     private javax.swing.JLabel 呢称;
     private javax.swing.JLabel 头像1;
-    private javax.swing.JLabel 好友码;
+    private javax.swing.JTable 好友表;
+    private javax.swing.JButton 添加好友;
     private javax.swing.JLabel 点券;
-    private javax.swing.JButton 确认兑换;
     private javax.swing.JLabel 等级;
     private javax.swing.JLabel 背景;
-    private javax.swing.JLabel 购买信息;
     private javax.swing.JButton 返回;
     // End of variables declaration//GEN-END:variables
 }
