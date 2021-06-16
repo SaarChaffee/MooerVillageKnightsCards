@@ -186,6 +186,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="CDK&#x8f93;&#x5165;&#x533a;">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CDK&#x8f93;&#x5165;&#x533a;ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="CDK">
           <Properties>
