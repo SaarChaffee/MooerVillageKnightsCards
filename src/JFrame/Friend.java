@@ -30,6 +30,16 @@ public class Friend extends JFrame {
         等级.setText( "等级：" + Golbal.level );
         点券.setText( "点券：" + Golbal.UserBalance + "" );
         呢称.setText( "呢称：" + Golbal.Account );
+
+    }
+
+    private void updateFriendList() {
+        ArrayList list = util.getFriendList( Golbal.UserUid );
+        for( Object i : list ){
+            好友表.setValueAt( ( Integer ) i, list.indexOf( i ), 0 );
+            好友表.setValueAt( util.getUserAccountByUid( ( Integer ) i ), list.indexOf( i ), 1 );
+        }
+
     }
 
     public Friend() {
@@ -58,6 +68,7 @@ public class Friend extends JFrame {
         呢称 = new javax.swing.JLabel();
         等级 = new javax.swing.JLabel();
         点券 = new javax.swing.JLabel();
+        UidTyping = new javax.swing.JTextPane();
         添加好友 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         好友表 = new javax.swing.JTable();
@@ -73,7 +84,10 @@ public class Friend extends JFrame {
         jPanel1.setLayout( jPanel1Layout );
         jPanel1Layout.setHorizontalGroup(
                 jPanel1Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( 背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap( 2, 2, 2 )
+                                .addComponent( 背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                .addContainerGap() )
                                         );
         jPanel1Layout.setVerticalGroup(
                 jPanel1Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
@@ -112,6 +126,7 @@ public class Friend extends JFrame {
 
         点券.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
         点券.setText( "点券" );
+
 
         添加好友.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
         添加好友.setText( "添加好友" );
@@ -190,8 +205,9 @@ public class Friend extends JFrame {
                                                 .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
                                                         .addComponent( 删除好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE )
                                                         .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                        .addComponent( 添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE ) ) ) )
-                                .addContainerGap( 45, Short.MAX_VALUE ) )
+                                                        .addComponent( 添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                        .addComponent( UidTyping, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE ) ) ) )
+                                .addContainerGap( 57, Short.MAX_VALUE ) )
                                         );
         jPanel2Layout.setVerticalGroup(
                 jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
@@ -207,7 +223,9 @@ public class Friend extends JFrame {
                                                 .addComponent( 点券 ) ) )
                                 .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
                                         .addGroup( jPanel2Layout.createSequentialGroup()
-                                                .addGap( 227, 227, 227 )
+                                                .addGap( 176, 176, 176 )
+                                                .addComponent( UidTyping, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE )
+                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.UNRELATED )
                                                 .addComponent( 添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
                                                 .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.UNRELATED )
                                                 .addComponent( 删除好友, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
@@ -247,24 +265,44 @@ public class Friend extends JFrame {
 
     private void 删除好友ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_删除好友ActionPerformed
         // TODO add your handling code here:
-        this.setVisible( false );
-        new DeleteFriend().setVisible( true );
+        int uid = Integer.valueOf( UidTyping.getText() );
+        if( util.isFriend( Golbal.UserUid, uid ) ){
+            if( JOptionPane.showConfirmDialog( null, "确认要删除好友吗？", "确认", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE ) == JOptionPane.YES_OPTION ){
+                int result = util.deleteFriend( Golbal.UserUid, uid );
+                if( result == 1 ){
+                    JOptionPane.showMessageDialog( null, "删除成功", null, JOptionPane.INFORMATION_MESSAGE );
+                    this.setVisible( false );
+                    new Friend().setVisible( true );
+                }
+                else{
+                    JOptionPane.showMessageDialog( null, "删除失败，请联系系统管理员", null, JOptionPane.INFORMATION_MESSAGE );
+                }
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog( null, "uid输入错误或不是好友uid，请重新输入", null, JOptionPane.INFORMATION_MESSAGE );
+        }
     }//GEN-LAST:event_删除好友ActionPerformed
 
     private void 添加好友ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_添加好友ActionPerformed
         // TODO add your handling code here:
-        this.setVisible( false );
-        new AddFriend().setVisible( true );
+        int uid = Integer.valueOf( UidTyping.getText() );
+        if( !util.isFriend( Golbal.UserUid, uid ) ){
+            int result = util.addFriend( Golbal.UserUid, uid );
+            if( result == 1 ){
+                JOptionPane.showMessageDialog( null, "添加成功", null, JOptionPane.INFORMATION_MESSAGE );
+                this.setVisible( false );
+                new Friend().setVisible( true );
+            }
+            else{
+                JOptionPane.showMessageDialog( null, "添加失败，请联系系统管理员", null, JOptionPane.INFORMATION_MESSAGE );
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog( null, "uid输入错误或不是好友uid，请重新输入", null, JOptionPane.INFORMATION_MESSAGE );
+        }
     }//GEN-LAST:event_添加好友ActionPerformed
 
-    private void updateFriendList() {
-        ArrayList list = util.getFriendList( Golbal.UserUid );
-        for( Object i : list ){
-            好友表.setValueAt( ( Integer ) i, list.indexOf( i ), 0 );
-            好友表.setValueAt( util.getUserAccountByUid( ( Integer ) i ), list.indexOf( i ), 1 );
-        }
-
-    }
 
     /**
      * @param args the command line arguments
@@ -303,6 +341,7 @@ public class Friend extends JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CDK;
+    private javax.swing.JTextPane UidTyping;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
