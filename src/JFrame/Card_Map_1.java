@@ -101,7 +101,7 @@ public class Card_Map_1 extends javax.swing.JFrame {
         背景 = new javax.swing.JLabel();
 
         setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
-        setTitle( "商城" );
+        setTitle( "卡牌图鉴" );
 
         backGround.setOpaque( false );
         backGround.setPreferredSize( new java.awt.Dimension( 1000, 700 ) );
