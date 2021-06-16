@@ -274,7 +274,7 @@ public class Main_UI extends javax.swing.JFrame {
     private void 充钱ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_充钱ActionPerformed
         // TODO add your handling code here:
         this.setVisible( false );
-        new AddFriend().setVisible( true );
+        new Recharge().setVisible( true );
     }//GEN-LAST:event_充钱ActionPerformed
 
     private void 好友ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_好友ActionPerformed
