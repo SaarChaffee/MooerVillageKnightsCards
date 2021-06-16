@@ -28,6 +28,20 @@
 
 以下方法均可从`lite.util`中导入
 
+### `getUserAccountByUid()`
+
+- **参数：** `int : 用户uid`
+- **返回：** `String : 用户名`
+- **说明：**
+  调用`getAllUserData()`获取用户名
+
+### `getFriendList()`
+
+- **参数：** `int : 用户uid`
+- **返回：** `ArrayList<Integer> : 用户好友列表`
+- **说明：**
+  调用`getFriend()`获得用户所有好友，包装成`ArrayList`并返回，好友uid以`Integer`形式存储在数组中
+
 ### `getFriend()`
 
 - **参数：** `int : 用户uid`
