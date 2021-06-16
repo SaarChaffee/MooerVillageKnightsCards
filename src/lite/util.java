@@ -9,10 +9,37 @@ package lite;
 import java.security.SecureRandom;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class util {
+    public static String getUserAccountByUid( int uid ) {
+        String acc = null;
+        ResultSet re = getAllUserData( uid );
+        try{
+            re.next();
+            acc = re.getString( "Account" );
+        }catch( SQLException throwables ){
+            throwables.printStackTrace();
+        }
+        return acc;
+    }
+
+    public static ArrayList<Integer> getFriendList( int uid ) {
+        ResultSet re = getFriend( uid );
+        ArrayList<Integer> list = new ArrayList<>();
+        try{
+            while( re.next() ){
+                list.add( re.getInt( "friend" ) );
+            }
+        }catch( SQLException throwables ){
+            throwables.printStackTrace();
+        }
+        return list;
+    }
+
     public static ResultSet getFriend( int UserUid ) {
-        String str = "select FriendUid as friend from mooer.dbo.Friend where UserUid = " + UserUid + " UNION ALL select UserUid as friend from Friend where FriendUid = " + UserUid;
+        String str = "select FriendUid as friend from mooer.dbo.Friend where UserUid = " + UserUid + " UNION ALL select UserUid as friend from mooer.dbo.Friend where FriendUid = " + UserUid;
         return dao.Search( str );
     }
 
