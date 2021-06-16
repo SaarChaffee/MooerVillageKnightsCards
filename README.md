@@ -22,9 +22,13 @@
 - Gacha
 - Khorium
 - 1v1 Battle
-- <del>Friend</del>
+- Friend
 
 [comment]: <> (### Details please read documents[docs]&#40;docs/api.md&#41;)
+
+## Realization method
+
+- [Realization method](docs/EndIntroduction.md)
 
 ## Submodules
 
