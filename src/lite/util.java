@@ -127,7 +127,7 @@ public class util {
                 + "values(" + newUid + ",'" + Account + "','" + PassWord + "','" + PhoneNumber + "')";
         result += dao.Update( str1 );
         String str2 = "insert into mooer.dbo.UserData "
-                + "values(" + newUid + ",'" + Account + "',1,0,0,0,0,1000,null)";
+                + "values(" + newUid + ",'" + Account + "',1,0,0,0,15,1000,null)";
         String str3 = "insert into mooer.dbo.CardColle(UserUid,水1,水2,水3,水4,水5,木1,木2,木3,木4,木5,火1,火2,火3,火4,火5) "
                 + "values(" + newUid + ",'true','true','true','true','true','true','true','true','true','true','true','true','true','true','true')";
         result += dao.Update( str2 );
