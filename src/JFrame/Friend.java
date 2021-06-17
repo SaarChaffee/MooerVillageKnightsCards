@@ -29,7 +29,7 @@ public class Friend extends JFrame {
     void updateMsg() {
         等级.setText( "等级：" + Golbal.level );
         点券.setText( "点券：" + Golbal.UserBalance + "" );
-        呢称.setText( "呢称：" + Golbal.Account );
+        呢称.setText( "呢称：" + Golbal.Account+" uid:"+Golbal.UserUid );
 
     }
 
@@ -73,186 +73,187 @@ public class Friend extends JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         好友表 = new javax.swing.JTable();
 
-        jLabel1.setText( "jLabel1" );
+        jLabel1.setText("jLabel1");
 
-        setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
-        setTitle( "我的好友" );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("我的好友");
 
-        背景.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b5.png" ) ) ); // NOI18N
+        背景.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backGround/b5.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout( jPanel1 );
-        jPanel1.setLayout( jPanel1Layout );
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-                jPanel1Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap( 2, 2, 2 )
-                                .addComponent( 背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                                .addContainerGap() )
-                                        );
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
         jPanel1Layout.setVerticalGroup(
-                jPanel1Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( 背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                                      );
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
-        jPanel2.setOpaque( false );
+        jPanel2.setOpaque(false);
 
-        头像1.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
-        头像1.setToolTipText( "" );
+        头像1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/i1.gif"))); // NOI18N
+        头像1.setToolTipText("");
 
-        CDK.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        CDK.setText( "好友列表" );
+        CDK.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        CDK.setText("好友列表");
 
-        删除好友.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        删除好友.setText( "删除好友" );
-        删除好友.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                删除好友ActionPerformed( evt );
+        删除好友.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        删除好友.setText("删除好友");
+        删除好友.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                删除好友ActionPerformed(evt);
             }
-        } );
+        });
 
-        返回.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        返回.setText( "返回" );
-        返回.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                返回ActionPerformed( evt );
+        返回.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        返回.setText("返回");
+        返回.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                返回ActionPerformed(evt);
             }
-        } );
+        });
 
-        呢称.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        呢称.setText( "呢称" );
+        呢称.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        呢称.setText("呢称");
 
-        等级.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        等级.setText( "等级" );
+        等级.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        等级.setText("等级");
 
-        点券.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        点券.setText( "点券" );
+        点券.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        点券.setText("点券");
 
+        UidTyping.setName(""); // NOI18N
 
-        添加好友.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        添加好友.setText( "添加好友" );
-        添加好友.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                添加好友ActionPerformed( evt );
+        添加好友.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        添加好友.setText("添加好友");
+        添加好友.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                添加好友ActionPerformed(evt);
             }
-        } );
+        });
 
-        好友表.setModel( new javax.swing.table.DefaultTableModel(
-                new Object[][]{
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null },
-                        { null, null }
-                },
-                new String[]{
-                        "好友uid", "好友昵称"
-                }
+        好友表.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "好友uid", "好友昵称"
+            }
         ) {
-            Class[] types = new Class[]{
-                    java.lang.Long.class, java.lang.String.class
+            Class[] types = new Class [] {
+                java.lang.Long.class, java.lang.String.class
             };
 
-            public Class getColumnClass( int columnIndex ) {
-                return types[columnIndex];
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
             }
-        } );
-        jScrollPane1.setViewportView( 好友表 );
+        });
+        jScrollPane1.setViewportView(好友表);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout( jPanel2 );
-        jPanel2.setLayout( jPanel2Layout );
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
-                jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addGroup( jPanel2Layout.createSequentialGroup()
-                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                        .addGroup( jPanel2Layout.createSequentialGroup()
-                                                .addGap( 29, 29, 29 )
-                                                .addComponent( 头像1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addGap( 18, 18, 18 )
-                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                                        .addComponent( 呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                        .addComponent( 等级, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                        .addComponent( 点券, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE ) ) )
-                                        .addGroup( jPanel2Layout.createSequentialGroup()
-                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                                        .addGroup( jPanel2Layout.createSequentialGroup()
-                                                                .addGap( 245, 245, 245 )
-                                                                .addComponent( jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED ) )
-                                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                                                .addContainerGap()
-                                                                .addComponent( CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                                .addGap( 41, 41, 41 ) ) )
-                                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                                        .addComponent( 删除好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                        .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                        .addComponent( 添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                        .addComponent( UidTyping, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE ) ) ) )
-                                .addContainerGap( 57, Short.MAX_VALUE ) )
-                                        );
-        jPanel2Layout.setVerticalGroup(
-                jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addGroup( jPanel2Layout.createSequentialGroup()
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(头像1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(等级, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(点券, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(245, 245, 245)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.TRAILING )
-                                        .addComponent( 头像1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                        .addGroup( jPanel2Layout.createSequentialGroup()
-                                                .addComponent( 呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addGap( 20, 20, 20 )
-                                                .addComponent( 等级 )
-                                                .addGap( 24, 24, 24 )
-                                                .addComponent( 点券 ) ) )
-                                .addGroup( jPanel2Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                        .addGroup( jPanel2Layout.createSequentialGroup()
-                                                .addGap( 176, 176, 176 )
-                                                .addComponent( UidTyping, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.UNRELATED )
-                                                .addComponent( 添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.UNRELATED )
-                                                .addComponent( 删除好友, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED )
-                                                .addComponent( 返回, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addGap( 0, 85, Short.MAX_VALUE ) )
-                                        .addGroup( javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                                                .addComponent( CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE )
-                                                .addPreferredGap( javax.swing.LayoutStyle.ComponentPlacement.RELATED )
-                                                .addComponent( jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE ) ) ) )
-                                      );
+                                .addComponent(CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(41, 41, 41)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(删除好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(返回, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(UidTyping, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(57, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(头像1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(呢称, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(等级)
+                        .addGap(24, 24, 24)
+                        .addComponent(点券)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(176, 176, 176)
+                        .addComponent(UidTyping, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(添加好友, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(删除好友, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(返回, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 85, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CDK, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout( getContentPane() );
-        getContentPane().setLayout( layout );
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                .addComponent( jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
-                                 );
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
         layout.setVerticalGroup(
-                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                .addComponent( jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
-                               );
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
