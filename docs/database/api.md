@@ -209,9 +209,7 @@
 - **返回：** `int : 用户被举报次数`
 - **说明：**
   调用`getAllUserData()`向数据库查询用户举报次数
-
-以下方法均可从`main.DAO.DaoUltra`中导入
-
+  
 ### `addFriend()`
 
 - **参数：** `int : 用户uid, int : 好友uid`
