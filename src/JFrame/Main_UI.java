@@ -292,6 +292,7 @@ public class Main_UI extends javax.swing.JFrame {
     private void 退出ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_退出ActionPerformed
         // TODO add your handling code here:
         this.setVisible( false );
+        System.exit( 0 );
     }//GEN-LAST:event_退出ActionPerformed
 
     private void 商城ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_商城ActionPerformed
