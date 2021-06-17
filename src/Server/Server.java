@@ -6,7 +6,9 @@
 
 package Server;
 
+import mooer.CardsCreat;
 import mooer.Golbal;
+import mooer.CardsCreat;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -126,18 +128,18 @@ public class Server extends javax.swing.JFrame {
         if( HP1 == 0 ){
             send( handle2, "win" );
             send( handle, "lose" );
-            handle.close();
-            handle2.close();
-            sSo.close();
-            sSo2.close();
+//            handle.close();
+//            handle2.close();
+//            sSo.close();
+//            sSo2.close();
         }
         if( HP2 == 0 ){
             send( handle, "win" );
             send( handle2, "lose" );
-            handle.close();
-            handle2.close();
-            sSo.close();
-            sSo2.close();
+//            handle.close();
+//            handle2.close();
+//            sSo.close();
+//            sSo2.close();
         }
 
     }

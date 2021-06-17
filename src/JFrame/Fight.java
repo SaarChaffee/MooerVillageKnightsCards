@@ -57,6 +57,10 @@ public class Fight extends javax.swing.JFrame {
 
     public static void getCard() {//摸牌
         myCards[lastChoose - 1] = Gacha.result();
+        while( ( Golbal.Cards_isHave[myCards[lastChoose - 1]] != true ) ){
+            myCards[lastChoose - 1] = Gacha.result();
+        }
+
         updateCard();
     }
 
@@ -70,6 +74,9 @@ public class Fight extends javax.swing.JFrame {
 
         for( int i = 0; i < 4; i++ ){//初始摸牌
             myCards[i] = Gacha.result();
+            while( Golbal.Cards_isHave[myCards[i]] != true ){
+                myCards[i] = Gacha.result();
+            }
         }
         updateCard();
     }
