@@ -6,6 +6,7 @@
 
 package JFrame;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 import lite.*;
@@ -22,8 +23,15 @@ public class Register extends javax.swing.JFrame {
     /**
      * Creates new form register
      */
+    void change_yzm(){
+        验证码.setIcon(new ImageIcon(getClass().getClassLoader().getResource("image/y"+sj+".jpg")));
+    
+}
+    int sj=1;
     public Register() {
         initComponents();
+        sj=1;
+        change_yzm();
     }
 
     /**
@@ -49,94 +57,102 @@ public class Register extends javax.swing.JFrame {
         昵称输入框 = new javax.swing.JTextField();
         邀请码 = new javax.swing.JLabel();
         邀请码输入框 = new javax.swing.JTextField();
+        验证码 = new javax.swing.JButton();
 
-        jLabel1.setText( "jLabel1" );
+        jLabel1.setText("jLabel1");
 
-        setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
-        setTitle( "登录" );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("登录");
 
-        背景.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b5.png" ) ) ); // NOI18N
+        背景.setIcon(new ImageIcon(getClass().getResource("/backGround/b5.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout( jPanel1 );
-        jPanel1.setLayout( jPanel1Layout );
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-                jPanel1Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( 背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                                        );
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
         jPanel1Layout.setVerticalGroup(
-                jPanel1Layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( 背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                                      );
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(背景, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
-        jPanel2.setOpaque( false );
-        jPanel2.setLayout( new org.netbeans.lib.awtextra.AbsoluteLayout() );
+        jPanel2.setOpaque(false);
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        密码输入框.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                密码输入框ActionPerformed( evt );
+        密码输入框.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                密码输入框ActionPerformed(evt);
             }
-        } );
-        jPanel2.add( 密码输入框, new org.netbeans.lib.awtextra.AbsoluteConstraints( 474, 294, 158, 30 ) );
+        });
+        jPanel2.add(密码输入框, new org.netbeans.lib.awtextra.AbsoluteConstraints(474, 294, 158, 30));
 
-        头像.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
-        头像.setText( "那你口裂" );
-        头像.setOpaque( true );
-        jPanel2.add( 头像, new org.netbeans.lib.awtextra.AbsoluteConstraints( 238, 226, 162, -1 ) );
-        jPanel2.add( 手机号输入框, new org.netbeans.lib.awtextra.AbsoluteConstraints( 474, 246, 158, 30 ) );
+        头像.setIcon(new ImageIcon(getClass().getResource("/icon/i1.gif"))); // NOI18N
+        头像.setText("那你口裂");
+        头像.setOpaque(true);
+        jPanel2.add(头像, new org.netbeans.lib.awtextra.AbsoluteConstraints(238, 226, 162, -1));
+        jPanel2.add(手机号输入框, new org.netbeans.lib.awtextra.AbsoluteConstraints(474, 246, 158, 30));
 
-        注册.setText( "注册" );
-        注册.setCursor( new java.awt.Cursor( java.awt.Cursor.HAND_CURSOR ) );
-        注册.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                注册ActionPerformed( evt );
+        注册.setText("注册");
+        注册.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        注册.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                注册ActionPerformed(evt);
             }
-        } );
-        jPanel2.add( 注册, new org.netbeans.lib.awtextra.AbsoluteConstraints( 540, 390, -1, -1 ) );
+        });
+        jPanel2.add(注册, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 390, -1, -1));
 
-        手机号.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        手机号.setText( "手机号" );
-        jPanel2.add( 手机号, new org.netbeans.lib.awtextra.AbsoluteConstraints( 425, 257, -1, -1 ) );
+        手机号.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        手机号.setText("手机号");
+        jPanel2.add(手机号, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 257, -1, -1));
 
-        密码.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        密码.setText( "密码：" );
-        jPanel2.add( 密码, new org.netbeans.lib.awtextra.AbsoluteConstraints( 425, 300, -1, -1 ) );
+        密码.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        密码.setText("密码：");
+        jPanel2.add(密码, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 300, -1, -1));
 
-        昵称.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        昵称.setText( "昵称：" );
-        jPanel2.add( 昵称, new org.netbeans.lib.awtextra.AbsoluteConstraints( 425, 209, -1, -1 ) );
+        昵称.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        昵称.setText("昵称：");
+        jPanel2.add(昵称, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 209, -1, -1));
 
-        昵称输入框.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                昵称输入框ActionPerformed( evt );
+        昵称输入框.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                昵称输入框ActionPerformed(evt);
             }
-        } );
-        jPanel2.add( 昵称输入框, new org.netbeans.lib.awtextra.AbsoluteConstraints( 474, 198, 158, 30 ) );
+        });
+        jPanel2.add(昵称输入框, new org.netbeans.lib.awtextra.AbsoluteConstraints(474, 198, 158, 30));
 
-        邀请码.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
-        邀请码.setText( "邀请码：" );
-        jPanel2.add( 邀请码, new org.netbeans.lib.awtextra.AbsoluteConstraints( 450, 350, -1, -1 ) );
+        邀请码.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
+        邀请码.setText("验证码：");
+        jPanel2.add(邀请码, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, -1, -1));
 
-        邀请码输入框.addActionListener( new java.awt.event.ActionListener() {
-            public void actionPerformed( java.awt.event.ActionEvent evt ) {
-                邀请码输入框ActionPerformed( evt );
+        邀请码输入框.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                邀请码输入框ActionPerformed(evt);
             }
-        } );
-        jPanel2.add( 邀请码输入框, new org.netbeans.lib.awtextra.AbsoluteConstraints( 518, 340, 110, 30 ) );
+        });
+        jPanel2.add(邀请码输入框, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, 60, 30));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout( getContentPane() );
-        getContentPane().setLayout( layout );
+        验证码.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                验证码ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(验证码, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 340, 80, 26));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                .addComponent( jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
-                                 );
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
         layout.setVerticalGroup(
-                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                        .addComponent( jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
-                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
-                                .addComponent( jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
-                               );
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -148,7 +164,7 @@ public class Register extends javax.swing.JFrame {
 
     private void 注册ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_注册ActionPerformed
         // TODO add your handling code here:
-        if( 邀请码输入框.getText().equals( "114514" ) ){
+        if(sj == 1&&邀请码输入框.getText().equalsIgnoreCase("2wcy")||sj == 2&&邀请码输入框.getText().equalsIgnoreCase("7467")||sj == 3&&邀请码输入框.getText().equalsIgnoreCase("6547")||sj == 4&&邀请码输入框.getText().equalsIgnoreCase("3312")||sj == 5&&邀请码输入框.getText().equalsIgnoreCase("vwo7")||sj == 6&&邀请码输入框.getText().equalsIgnoreCase("7364")||sj == 7&&邀请码输入框.getText().equalsIgnoreCase("uwv6")||sj == 8&&邀请码输入框.getText().equalsIgnoreCase("zvyk")||sj == 9&&邀请码输入框.getText().equalsIgnoreCase("m30e")||sj == 10&&邀请码输入框.getText().equalsIgnoreCase("qnmx")){
             String name = 昵称输入框.getText();
             String mima = 密码输入框.getText();
             String shoujihao = 手机号输入框.getText();
@@ -163,7 +179,7 @@ public class Register extends javax.swing.JFrame {
             }
         }
         else{
-            JOptionPane.showMessageDialog( null, "邀请码不正确注册失败！", "爬！", JOptionPane.INFORMATION_MESSAGE );
+            JOptionPane.showMessageDialog( null, "验证码不正确注册失败！", "爬！", JOptionPane.INFORMATION_MESSAGE );
         }
 
     }//GEN-LAST:event_注册ActionPerformed
@@ -175,6 +191,12 @@ public class Register extends javax.swing.JFrame {
     private void 邀请码输入框ActionPerformed( java.awt.event.ActionEvent evt ) {//GEN-FIRST:event_邀请码输入框ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_邀请码输入框ActionPerformed
+
+    private void 验证码ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_验证码ActionPerformed
+        // TODO add your handling code here:
+        sj=(sj++)%10 +1;
+        change_yzm();
+    }//GEN-LAST:event_验证码ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,5 +248,6 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JLabel 背景;
     private javax.swing.JLabel 邀请码;
     private javax.swing.JTextField 邀请码输入框;
+    private javax.swing.JButton 验证码;
     // End of variables declaration//GEN-END:variables
 }
