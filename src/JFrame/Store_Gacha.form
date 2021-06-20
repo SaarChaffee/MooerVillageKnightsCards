@@ -24,7 +24,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="1165" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="1020" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Component id="Up" alignment="0" max="32767" attributes="0"/>
           </Group>
@@ -35,7 +35,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="784" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="761" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Component id="Up" alignment="0" max="32767" attributes="0"/>
           </Group>
@@ -60,7 +60,7 @@
                       <Component id="充值" min="-2" pref="187" max="-2" attributes="0"/>
                       <Component id="购买" min="-2" pref="187" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="389" max="32767" attributes="0"/>
+                  <EmptySpace pref="244" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="返回" min="-2" pref="187" max="-2" attributes="0"/>
                       <Component id="抽卡" min="-2" pref="187" max="-2" attributes="0"/>
@@ -111,7 +111,7 @@
                       <Component id="jLabel1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       <Component id="jLabel2" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="29" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="返回" min="-2" pref="76" max="-2" attributes="0"/>
@@ -256,7 +256,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="1165" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="1020" max="32767" attributes="0"/>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
@@ -268,7 +268,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="784" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="761" max="32767" attributes="0"/>
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
