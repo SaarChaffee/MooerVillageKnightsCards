@@ -55,115 +55,115 @@ public class Gacha_Single extends javax.swing.JFrame {
         BackGround = new javax.swing.JPanel();
         BackGroundLabel = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("单抽");
+        setDefaultCloseOperation( javax.swing.WindowConstants.EXIT_ON_CLOSE );
+        setTitle( "单抽" );
 
-        Up.setOpaque(false);
-        Up.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        Up.setOpaque( false );
+        Up.setLayout( new org.netbeans.lib.awtextra.AbsoluteLayout() );
 
-        购买.setBackground(new java.awt.Color(153, 153, 255));
-        购买.setFont(new java.awt.Font("宋体", 1, 36)); // NOI18N
-        购买.setForeground(new java.awt.Color(255, 102, 153));
-        购买.setText("单抽");
-        购买.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                购买ActionPerformed(evt);
+        购买.setBackground( new java.awt.Color( 153, 153, 255 ) );
+        购买.setFont( new java.awt.Font( "宋体", 1, 36 ) ); // NOI18N
+        购买.setForeground( new java.awt.Color( 255, 102, 153 ) );
+        购买.setText( "单抽" );
+        购买.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                购买ActionPerformed( evt );
             }
-        });
-        Up.add(购买, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 406, 187, 76));
+        } );
+        Up.add( 购买, new org.netbeans.lib.awtextra.AbsoluteConstraints( 409, 406, 187, 76 ) );
 
-        返回.setBackground(new java.awt.Color(153, 153, 255));
-        返回.setFont(new java.awt.Font("宋体", 1, 36)); // NOI18N
-        返回.setForeground(new java.awt.Color(0, 51, 204));
-        返回.setText("返回");
-        返回.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                返回ActionPerformed(evt);
+        返回.setBackground( new java.awt.Color( 153, 153, 255 ) );
+        返回.setFont( new java.awt.Font( "宋体", 1, 36 ) ); // NOI18N
+        返回.setForeground( new java.awt.Color( 0, 51, 204 ) );
+        返回.setText( "返回" );
+        返回.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                返回ActionPerformed( evt );
             }
-        });
-        Up.add(返回, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 594, 187, 76));
+        } );
+        Up.add( 返回, new org.netbeans.lib.awtextra.AbsoluteConstraints( 640, 594, 187, 76 ) );
 
-        充值.setBackground(new java.awt.Color(0, 204, 204));
-        充值.setFont(new java.awt.Font("宋体", 1, 36)); // NOI18N
-        充值.setForeground(new java.awt.Color(204, 255, 204));
-        充值.setText("充值");
-        充值.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                充值ActionPerformed(evt);
+        充值.setBackground( new java.awt.Color( 0, 204, 204 ) );
+        充值.setFont( new java.awt.Font( "宋体", 1, 36 ) ); // NOI18N
+        充值.setForeground( new java.awt.Color( 204, 255, 204 ) );
+        充值.setText( "充值" );
+        充值.addActionListener( new java.awt.event.ActionListener() {
+            public void actionPerformed( java.awt.event.ActionEvent evt ) {
+                充值ActionPerformed( evt );
             }
-        });
-        Up.add(充值, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 594, 187, 76));
+        } );
+        Up.add( 充值, new org.netbeans.lib.awtextra.AbsoluteConstraints( 207, 594, 187, 76 ) );
 
-        点券100.setFont(new java.awt.Font("宋体", 1, 24)); // NOI18N
-        点券100.setForeground(new java.awt.Color(255, 102, 102));
-        点券100.setText("100点券");
-        Up.add(点券100, new org.netbeans.lib.awtextra.AbsoluteConstraints(453, 500, 105, 33));
+        点券100.setFont( new java.awt.Font( "宋体", 1, 24 ) ); // NOI18N
+        点券100.setForeground( new java.awt.Color( 255, 102, 102 ) );
+        点券100.setText( "100点券" );
+        Up.add( 点券100, new org.netbeans.lib.awtextra.AbsoluteConstraints( 453, 500, 105, 33 ) );
 
-        头像.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/i1.gif"))); // NOI18N
-        头像.setToolTipText("");
-        Up.add(头像, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 31, 100, 100));
+        头像.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/i1.gif" ) ) ); // NOI18N
+        头像.setToolTipText( "" );
+        Up.add( 头像, new org.netbeans.lib.awtextra.AbsoluteConstraints( 37, 31, 100, 100 ) );
 
-        点券.setFont(new java.awt.Font("宋体", 1, 12)); // NOI18N
-        点券.setText("点券：114514");
-        Up.add(点券, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 116, 38));
+        点券.setFont( new java.awt.Font( "宋体", 1, 12 ) ); // NOI18N
+        点券.setText( "点券：114514" );
+        Up.add( 点券, new org.netbeans.lib.awtextra.AbsoluteConstraints( 160, 90, 116, 38 ) );
 
-        等级.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        等级.setText("等级：");
-        Up.add(等级, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 70, -1));
+        等级.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        等级.setText( "等级：" );
+        Up.add( 等级, new org.netbeans.lib.awtextra.AbsoluteConstraints( 160, 70, 70, -1 ) );
 
-        Card1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/问号.png"))); // NOI18N
-        Up.add(Card1, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 175, -1, -1));
+        Card1.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/icon/问号.png" ) ) ); // NOI18N
+        Up.add( Card1, new org.netbeans.lib.awtextra.AbsoluteConstraints( 426, 175, -1, -1 ) );
 
-        卡牌属性.setFont(new java.awt.Font("宋体", 1, 24)); // NOI18N
-        卡牌属性.setForeground(new java.awt.Color(255, 255, 51));
-        Up.add(卡牌属性, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, 90, 40));
+        卡牌属性.setFont( new java.awt.Font( "宋体", 1, 24 ) ); // NOI18N
+        卡牌属性.setForeground( new java.awt.Color( 255, 255, 51 ) );
+        Up.add( 卡牌属性, new org.netbeans.lib.awtextra.AbsoluteConstraints( 460, 120, 90, 40 ) );
 
-        呢称.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
-        呢称.setText("呢称：");
-        Up.add(呢称, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, -1, -1));
+        呢称.setFont( new java.awt.Font( "宋体", 1, 14 ) ); // NOI18N
+        呢称.setText( "呢称：" );
+        Up.add( 呢称, new org.netbeans.lib.awtextra.AbsoluteConstraints( 160, 40, -1, -1 ) );
 
-        BackGroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/backGround/b1.png"))); // NOI18N
-        BackGroundLabel.setOpaque(true);
+        BackGroundLabel.setIcon( new javax.swing.ImageIcon( getClass().getResource( "/backGround/b1.png" ) ) ); // NOI18N
+        BackGroundLabel.setOpaque( true );
 
-        javax.swing.GroupLayout BackGroundLayout = new javax.swing.GroupLayout(BackGround);
-        BackGround.setLayout(BackGroundLayout);
+        javax.swing.GroupLayout BackGroundLayout = new javax.swing.GroupLayout( BackGround );
+        BackGround.setLayout( BackGroundLayout );
         BackGroundLayout.setHorizontalGroup(
-            BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1020, Short.MAX_VALUE)
-            .addGroup(BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackGroundLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(BackGroundLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
+                BackGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 1020, Short.MAX_VALUE )
+                        .addGroup( BackGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addGroup( BackGroundLayout.createSequentialGroup()
+                                        .addContainerGap()
+                                        .addComponent( BackGroundLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                        .addContainerGap() ) )
+                                           );
         BackGroundLayout.setVerticalGroup(
-            BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 760, Short.MAX_VALUE)
-            .addGroup(BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackGroundLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(BackGroundLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
+                BackGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 760, Short.MAX_VALUE )
+                        .addGroup( BackGroundLayout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addGroup( BackGroundLayout.createSequentialGroup()
+                                        .addContainerGap()
+                                        .addComponent( BackGroundLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE )
+                                        .addContainerGap() ) )
+                                         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout( getContentPane() );
+        getContentPane().setLayout( layout );
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1020, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(Up, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(BackGround, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 1020, Short.MAX_VALUE )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( Up, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( BackGround, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                                 );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 760, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(Up, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(BackGround, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+                layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                        .addGap( 0, 760, Short.MAX_VALUE )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( Up, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                        .addGroup( layout.createParallelGroup( javax.swing.GroupLayout.Alignment.LEADING )
+                                .addComponent( BackGround, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE ) )
+                               );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -184,7 +184,7 @@ public class Gacha_Single extends javax.swing.JFrame {
         // TODO add your handling code here:
         if( JOptionPane.showConfirmDialog( null, "100点券一次，确定进行单抽吗？", "确认", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE ) == JOptionPane.YES_OPTION ){
             if( Golbal.UserBalance >= 100 ){
-                int rand = Gacha.result();
+                int rand = Gacha.result( System.nanoTime() % 0x7f7f7f7f );
                 ChangeImg.changeImg( Card1, rand );
                 卡牌属性.setText( Golbal.cardsList[rand].type + Golbal.cardsList[rand].var );
                 util.Gacha( Golbal.UserUid, 100 );

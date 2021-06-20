@@ -221,7 +221,7 @@ public class Gacha_5 extends javax.swing.JFrame {
             if( Golbal.UserBalance >= 400 ){
                 int Card[] = new int[5];
                 for( int i = 0; i < 5; i++ ){
-                    Card[i] = Gacha.result();
+                    Card[i] = Gacha.result( System.nanoTime() % 0x7f7f7f7f );
                 }
                 ChangeImg.changeImg( Card1, Card[0] );
                 卡牌属性1.setText( Golbal.cardsList[Card[0]].type + Golbal.cardsList[Card[0]].var );

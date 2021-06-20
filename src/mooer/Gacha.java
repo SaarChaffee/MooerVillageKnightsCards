@@ -35,10 +35,10 @@ public class Gacha {
 
     static long t = 0;
 
-    public static int result() { //直接调用返回抽到的序号
+    public static <T> int result( T t1 ) { //直接调用返回抽到的序号
         int re = 0;
-        t = System.nanoTime();
-        Random rand = new Random( t );
+        // t= System.nanoTime();
+        Random rand = new Random( ( long ) Integer.valueOf( t1 + "" ) );
         int ran;
         ran = Math.abs( rand.nextInt() ) % 1000 + 1;
         if( ran >= 1 && ran <= 140 ){
@@ -57,6 +57,14 @@ public class Gacha {
             re = Math.abs( rand.nextInt() ) % 2 + 19 + ( Math.abs( rand.nextInt() ) % 3 ) * 20;
         }
         return re;
+    }
+
+    public static int result_getcard() { //方法重写 摸牌时用
+        t = System.nanoTime();
+        Random rand = new Random( t );
+        int ran;
+        ran = Math.abs( rand.nextInt() ) % 60 + 1;
+        return ran;
     }
 
 }
