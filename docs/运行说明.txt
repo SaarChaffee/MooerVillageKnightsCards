@@ -1,0 +1,5 @@
+服务端运行：请在mooer类里面开启 cardsCreat 和 server
+
+客户端运行：1.在loadIP里面设置服务器连接ip和端口，在lite/driver里面设置数据库ip和端口。
+
+	    2. 在mooer类中开启 Signin  LoadIP  play（背景音乐） 
