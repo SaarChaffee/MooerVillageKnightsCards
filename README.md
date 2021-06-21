@@ -34,6 +34,10 @@
 
 - [MooerVillageKnightsCards](https://github.com/SaarChaffee/MooerVillageKnightsCards)
 
+## Other Repository
+
+- [mooer](https://gitee.com/Evistix/mooer)
+
 ## Submodules
 
 - [full version of Back-end](https://github.com/saarchaffee/JavaClosingHomework)
