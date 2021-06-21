@@ -30,13 +30,22 @@
 
 - [Realization method](docs/EndIntroduction.md)
 
+## Main Repository
+
+- [MooerVillageKnightsCards](https://github.com/SaarChaffee/MooerVillageKnightsCards)
+
 ## Submodules
 
 - [full version of Back-end](https://github.com/saarchaffee/JavaClosingHomework)
 
-  </h2>
+## Requirement
 
-### Structure Tree View
+- [mssql-jdbc-9.2.1.jre8](https://docs.microsoft.com/zh-cn/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)
+- Netbeans 8.0
+
+</h2>
+
+## Structure Tree View
 
   <img src ="resources/pic1.png">
 
